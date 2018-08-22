@@ -1,0 +1,2 @@
+1、agent.sh是zabbix客户端安装脚本
+2、zabbix_dingding.py是钉钉报警脚本
