@@ -15,8 +15,8 @@ spec:
       labels:
         app: mysql
     spec:
-      nodeSelector:
-        node1: worker1
+ #     nodeSelector:     ##指定node
+ #       node1: worker1
       containers:
       - name: mysql
         image: registry.cn-shanghai.aliyuncs.com/qianjian/mysql
