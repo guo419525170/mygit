@@ -19,12 +19,12 @@ spec:
  #       node1: worker1
       containers:
       - name: mysql
-        image: registry.cn-shanghai.aliyuncs.com/qianjian/mysql
+        image: 172.17.100.233/mysql5.7
         imagePullPolicy: Always
         volumeMounts:
         - mountPath: /var/lib/mysql
           name: mysql-datadir
-        - mountPath: /etc/mysql/conf.d
+        - mountPath: /etc/mysql/mysql.conf.d
           name: mysql-conf
         ports:
           - containerPort: 3306
