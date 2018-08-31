@@ -13,17 +13,21 @@ sleep 3
 echo `service mysql status`
 
 echo '2.开始导入数据....'
-#导入数据schem.sql那里边把导入数据库的命令写入进去. 
-mysql < /mysql/schema.sql
-echo '3.导入数据完毕....'
+#导入数据
+#mysql < /mysql/schema.sql
+#echo '3.导入数据完毕....'
 
 sleep 3
 echo `service mysql status`
 
 #重新设置mysql密码
-#echo '4.开始修改密码....'
+echo '4.开始修改密码....'
 #mysql < /mysql/privileges.sql
-#echo '5.修改密码完毕....'
+mysql << EOF
+grant all on *.* to root@'%' identified by '123456' with grant option;
+flush privileges;
+EOF
+echo '5.修改密码完毕....'
 
 #sleep 3
 echo `service mysql status`
