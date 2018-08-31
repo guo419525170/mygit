@@ -1,0 +1,51 @@
+kind: Deployment
+apiVersion: extensions/v1beta1
+
+metadata:
+  name: mysql
+  labels:
+    app: mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      nodeSelector:
+        node1: worker1
+      containers:
+      - name: mysql
+        image: registry.cn-shanghai.aliyuncs.com/qianjian/mysql
+        imagePullPolicy: Always
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: mysql-datadir
+        - mountPath: /etc/mysql/conf.d
+          name: mysql-conf
+        ports:
+          - containerPort: 3306
+      volumes:
+      - name: mysql-datadir
+        hostPath:
+          path: /data/project/mysql/datadir
+      - name: mysql-conf
+        hostPath:
+          path: /data/project/mysql/conf.d
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+spec:
+  ports:
+    - port: 3306
+      targetPort: 3306
+      nodePort: 33306
+      protocol: TCP
+  type: NodePort
+  selector:
+    app: mysql
