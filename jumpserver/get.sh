@@ -244,6 +244,7 @@ sed -i "s#or 'DEBUG'#or 'ERROR'#g" /opt/coco/conf.py
 ##启动服务
 cd /opt
 mkdir -p /opt/coco/logs
+mkdir -p /opt/coco/keys
 nohup python /opt/jumpserver/run_server.py all &
 nohup python /opt/coco/run_server.py &
 } || {
