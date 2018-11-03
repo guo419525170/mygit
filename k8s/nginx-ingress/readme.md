@@ -1,6 +1,6 @@
 ###说明
 ###本目录为nginx-ingress的安装和使用，以及配置https
-+ 1、首先执行kubectl apply -f configmap.yaml ，这个文件集合了namespace以及nginx-ingress的configMap
++ 1、首先执行kubectl apply -f configmap-ingress.yaml ，这个文件集合了namespace以及nginx-ingress的configMap
 + 2、部署tomcat测试服务，执行kubectl apply -f deploy-tomcat.yaml
 + 3、部署nginx-ingress默认后端，执行kubectl apply -f default-backend.yaml
 + 4、部署Nginx-ingress，执行kubectl apply -f nginx-ingress.yaml，这个文件集合了对nginx-ingress的RABC授权、pod以及service
@@ -21,7 +21,7 @@ openssl req -new -x509 -key tls.key -out tls.crt -subj /CN=jtcf.tomcat.com
 ``` bash
 kubectl create secret tls tomcat-ingress-secret --cert=tls.crt --key=tls.key
 ```
-+ 编辑ing-tomcat.yaml文件：加上tls,然后apply,修改后的文件就是ingress-https-tomcat.yaml
++ 编辑ing-tomcat.yaml文件：加上tls,然后apply
 
 
 ``` bash
