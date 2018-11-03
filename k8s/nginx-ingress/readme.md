@@ -19,26 +19,28 @@ openssl req -new -x509 -key tls.key -out tls.crt -subj /CN=jtcf.tomcat.com
 + 创建secret: kubectl create secret tls tomcat-ingress-secret --cert=tls.crt --key=tls.key
 + 编辑ing-tomcat.yaml文件：加上tls,然后apply,修改后的文件就是ingress-https-tomcat.yaml
 
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: ingress-tomcat
-  namespace: default
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-spec:
-  tls:
-  - hosts:
-    - tomcat.zaizai.com
-    secretName: tomcat-ingress-secret
-  rules:
-  - host: tomcat.zaizai.com
-    http:
-      paths:
-      - path:
-        backend:
-          serviceName: tomcat
-          servicePort: 8080
+
+
+>apiVersion: extensions/v1beta1
+>kind: Ingress
+>metadata:
+>  name: ingress-tomcat
+>  namespace: default
+>  annotations:
+>    kubernetes.io/ingress.class: "nginx"
+>spec:
+>  tls:
+>  - hosts:
+>    - tomcat.zaizai.com
+>    secretName: tomcat-ingress-secret
+>  rules:
+>  - host: tomcat.zaizai.com
+>    http:
+>      paths:
+>      - path:
+>        backend:
+>          serviceName: tomcat
+>          servicePort: 8080
 
 		  
 + 通过浏览器访问（需要添加域名解析）
