@@ -35,10 +35,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - tomcat.zaizai.com
+    - jtcf.tomcat.com
     secretName: tomcat-ingress-secret
   rules:
-  - host: tomcat.zaizai.com
+  - host: jtcf.tomcat.com
     http:
       paths:
       - path:
@@ -47,4 +47,8 @@ spec:
           servicePort: 8080
  
 ```	  
-+ 通过浏览器访问（需要添加域名解析）
++ 通过浏览器http访问（需要添加域名解析）
+    jtcf.tomcat.com:30080      
+
++ 通过https访问,如果没有自动重定向
+    https://jtcf.tomcat.com:30443	
