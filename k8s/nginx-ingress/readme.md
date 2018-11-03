@@ -7,7 +7,7 @@
 + 5、最后部署ingrss服务，执行kubectl apply -f ingress-tomcat.yaml
 
 + ####为应用配置https
-+ 说明: 尽管ingress可以实现暴露很少的端口，通过域名来提供多种服务，但使用https更为安全，这里将示例tomcat与myapp设置为https访问。
++ 说明: 尽管ingress可以实现暴露很少的端口，通过域名来提供多种服务，但使用https更为安全，这里将示例tomcat为https访问。
 
 + tomcat: 假如tomcat通过http方式已经可以访问
 + 创建证书：
