@@ -12,11 +12,15 @@
 + tomcat: 假如tomcat通过http方式已经可以访问
 + 创建证书：
 
+``` bash
 openssl genrsa -out tls.key 2048
 openssl req -new -x509 -key tls.key -out tls.crt -subj /CN=jtcf.tomcat.com
+```
 
-
-+ 创建secret: kubectl create secret tls tomcat-ingress-secret --cert=tls.crt --key=tls.key
++ 创建secret: 
+``` bash
+kubectl create secret tls tomcat-ingress-secret --cert=tls.crt --key=tls.key
+```
 + 编辑ing-tomcat.yaml文件：加上tls,然后apply,修改后的文件就是ingress-https-tomcat.yaml
 
 
