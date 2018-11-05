@@ -10,7 +10,7 @@
 + 说明: 尽管ingress可以实现暴露很少的端口，通过域名来提供多种服务，但使用https更为安全，这里将示例tomcat为https访问。
 
 + tomcat: 假如tomcat通过http方式已经可以访问,配置https访问如下：
-+ 1、在nginx-ingress的pod添加hostNetwork网络
++ 1、在nginx-ingress的pod添加hostNetwork网络。注意：设置了hostNetwork时，副本数不能超过node节点数
 ``` bash
 spec:
       serviceAccountName: nginx-ingress-serviceaccount
@@ -54,8 +54,6 @@ spec:
           servicePort: 8080
  
 ```	  
-+ 通过浏览器http访问（需要添加域名解析）
-    jtcf.tomcat.com:30080      
-
-+ 通过https访问,如果没有自动重定向
-    https://jtcf.tomcat.com:30443	
++ 通过浏览器http访问（需要添加域名解析）,会自动重定向到https
+   http://jtcf.tomcat.com	
+ 
