@@ -9,19 +9,26 @@
 + ####为应用配置https
 + 说明: 尽管ingress可以实现暴露很少的端口，通过域名来提供多种服务，但使用https更为安全，这里将示例tomcat为https访问。
 
-+ tomcat: 假如tomcat通过http方式已经可以访问
-+ 创建证书：
++ tomcat: 假如tomcat通过http方式已经可以访问,配置https访问如下：
++ 1、在nginx-ingress的pod添加hostNetwork网络
+``` bash
+spec:
+      serviceAccountName: nginx-ingress-serviceaccount
+      hostNetwork: true
+```
+
++ 2、创建证书：
 
 ``` bash
 openssl genrsa -out tls.key 2048
 openssl req -new -x509 -key tls.key -out tls.crt -subj /CN=jtcf.tomcat.com
 ```
 
-+ 创建secret: 
++ 3、创建secret: 
 ``` bash
 kubectl create secret tls tomcat-ingress-secret --cert=tls.crt --key=tls.key
 ```
-+ 编辑ing-tomcat.yaml文件：加上tls,然后apply
++ 4、编辑ing-tomcat.yaml文件：加上tls,然后apply
 
 
 ``` bash
