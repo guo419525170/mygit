@@ -10,7 +10,7 @@
 + 说明: 尽管ingress可以实现暴露很少的端口，通过域名来提供多种服务，但使用https更为安全，这里将示例tomcat为https访问。
 
 + tomcat: 假如tomcat通过http方式已经可以访问,配置https访问如下：
-+ 1、在nginx-ingress的pod添加hostNetwork网络。注意：设置了hostNetwork时，副本数不能超过node节点数,并且域名需要解析到容器所在的Node的IP,把pod指定到固定的node,方便域名解析
++ 1、在nginx-ingress的pod添加hostNetwork网络或者使用hostPort暴露443端口。注意：设置了hostNetwork时，副本数不能超过node节点数,并且域名需要解析到容器所在的Node的IP,把pod指定到固定的node,方便域名解析
 ``` bash
 spec:
       serviceAccountName: nginx-ingress-serviceaccount
