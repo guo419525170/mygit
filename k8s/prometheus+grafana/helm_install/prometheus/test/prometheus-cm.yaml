@@ -1,0 +1,268 @@
+apiVersion: v1
+data:
+  alerts: |
+    groups:
+    - name: k8s_alert_rules
+      rules:
+      - alert: container_mem_over_30
+        annotations:
+          description: Memory Usage of Pod {{ $labels.pod_name }} on {{ $labels.kubernetes_io_hostname
+            }} has exceeded 90% for more than 2 minutes.
+          summary: '{{ $labels.pod_name }}''s memory usage alert'
+        expr: (sum(container_memory_working_set_bytes{image!="",name=~"^k8s_.*", pod_name!=""})
+          by (pod_name)) / (sum (container_spec_memory_limit_bytes{image!="",name=~"^k8s_.*",
+          pod_name!=""}) by (pod_name)) > 0.9 and (sum(container_memory_working_set_bytes{image!="",name=~"^k8s_.*",
+          pod_name!=""}) by (pod_name)) / (sum (container_spec_memory_limit_bytes{image!="",name=~"^k8s_.*",
+          pod_name!=""}) by (pod_name)) < 2
+        for: 2m
+      - alert: node_down
+        annotations:
+          description: Node {{ $labels.kubernetes_io_hostname }} is down
+          summary: Node {{ $labels.kubernetes_io_hostname }} is down
+        expr: up == 0
+        for: 60s
+      - alert: NodeFilesystemUsage
+        annotations:
+          description: '{{$labels.instance}}: Filesystem usage is above 80% (current value
+            is: {{ $value }}'
+          summary: '{{$labels.instance}}: High Filesystem usage detected'
+        expr: (node_filesystem_size{device="rootfs"} - node_filesystem_free{device="rootfs"})
+          / node_filesystem_size{device="rootfs"} * 100 > 80
+        for: 2m
+        labels:
+          team: node
+      - alert: NodeMemoryUsage
+        annotations:
+          description: '{{$labels.instance}}: Memory usage is above 80% (current value
+            is: {{ $value }}'
+          summary: '{{$labels.instance}}: High Memory usage detected'
+        expr: (node_memory_MemTotal - (node_memory_MemFree+node_memory_Buffers+node_memory_Cached
+          )) / node_memory_MemTotal * 100 > 80
+        for: 2m
+        labels:
+          team: node
+      - alert: NodeCPUUsage
+        annotations:
+          description: '{{$labels.instance}}: CPU usage is above 80% (current value is:
+            {{ $value }}'
+          summary: '{{$labels.instance}}: High CPU usage detected'
+        expr: (100 - (avg by (instance) (irate(node_cpu{job="kubernetes-node-exporter",mode="idle"}[5m]))
+          * 100)) > 80
+        for: 2m
+        labels:
+          team: node
+      - alert: PodMemUsage
+        annotations:
+          description: '{{$labels.instance}}: Pod Mem is above 80% ,(current value is:
+            {{ $value }})'
+          summary: '{{$labels.instance}}: Pod High Mem usage detected'
+        expr: container_memory_usage_bytes{container_name!=""} / container_spec_memory_limit_bytes{container_name!=""}  *100
+          != +Inf > 80
+        for: 2m
+        labels:
+          severity: warning
+      - alert: PodCpuUsage
+        annotations:
+          description: '{{$labels.instance}}: Pod CPU is above 80% ,(current value is:
+            {{ $value }})'
+          summary: '{{$labels.instance}}: Pod High CPU usage detected'
+        expr: sum by (pod_name)( rate(container_cpu_usage_seconds_total{image!=""}[1m]
+          ) ) * 100 > 70
+        for: 2m
+        labels:
+          severity: warning
+  prometheus.yml: |
+    global:
+      evaluation_interval: 1m
+      scrape_interval: 1m
+      scrape_timeout: 10s
+    rule_files:
+    - /etc/config/rules
+    - /etc/config/alerts
+    scrape_configs:
+    - job_name: prometheus
+      static_configs:
+      - targets:
+        - localhost:9090
+    - bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+      job_name: kubernetes-apiservers
+      kubernetes_sd_configs:
+      - role: endpoints
+      relabel_configs:
+      - action: keep
+        regex: default;kubernetes;https
+        source_labels:
+        - __meta_kubernetes_namespace
+        - __meta_kubernetes_service_name
+        - __meta_kubernetes_endpoint_port_name
+      scheme: https
+      tls_config:
+        ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+        insecure_skip_verify: true
+    - bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+      job_name: kubernetes-nodes
+      kubernetes_sd_configs:
+      - role: node
+      relabel_configs:
+      - action: labelmap
+        regex: __meta_kubernetes_node_label_(.+)
+      - replacement: kubernetes.default.svc:443
+        target_label: __address__
+      - regex: (.+)
+        replacement: /api/v1/nodes/${1}/proxy/metrics
+        source_labels:
+        - __meta_kubernetes_node_name
+        target_label: __metrics_path__
+      scheme: https
+      tls_config:
+        ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+        insecure_skip_verify: true
+    - bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+      job_name: kubernetes-nodes-cadvisor
+      kubernetes_sd_configs:
+      - role: node
+      relabel_configs:
+      - action: labelmap
+        regex: __meta_kubernetes_node_label_(.+)
+      - replacement: kubernetes.default.svc:443
+        target_label: __address__
+      - regex: (.+)
+        replacement: /api/v1/nodes/${1}/proxy/metrics/cadvisor
+        source_labels:
+        - __meta_kubernetes_node_name
+        target_label: __metrics_path__
+      scheme: https
+      tls_config:
+        ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+        insecure_skip_verify: true
+    - job_name: kubernetes-service-endpoints
+      kubernetes_sd_configs:
+      - role: endpoints
+      relabel_configs:
+      - action: keep
+        regex: true
+        source_labels:
+        - __meta_kubernetes_service_annotation_prometheus_io_scrape
+      - action: replace
+        regex: (https?)
+        source_labels:
+        - __meta_kubernetes_service_annotation_prometheus_io_scheme
+        target_label: __scheme__
+      - action: replace
+        regex: (.+)
+        source_labels:
+        - __meta_kubernetes_service_annotation_prometheus_io_path
+        target_label: __metrics_path__
+      - action: replace
+        regex: ([^:]+)(?::\d+)?;(\d+)
+        replacement: $1:$2
+        source_labels:
+        - __address__
+        - __meta_kubernetes_service_annotation_prometheus_io_port
+        target_label: __address__
+      - action: labelmap
+        regex: __meta_kubernetes_service_label_(.+)
+      - action: replace
+        source_labels:
+        - __meta_kubernetes_namespace
+        target_label: kubernetes_namespace
+      - action: replace
+        source_labels:
+        - __meta_kubernetes_service_name
+        target_label: kubernetes_name
+    - honor_labels: true
+      job_name: prometheus-pushgateway
+      kubernetes_sd_configs:
+      - role: service
+      relabel_configs:
+      - action: keep
+        regex: pushgateway
+        source_labels:
+        - __meta_kubernetes_service_annotation_prometheus_io_probe
+    - job_name: kubernetes-services
+      kubernetes_sd_configs:
+      - role: service
+      metrics_path: /probe
+      params:
+        module:
+        - http_2xx
+      relabel_configs:
+      - action: keep
+        regex: true
+        source_labels:
+        - __meta_kubernetes_service_annotation_prometheus_io_probe
+      - source_labels:
+        - __address__
+        target_label: __param_target
+      - replacement: blackbox
+        target_label: __address__
+      - source_labels:
+        - __param_target
+        target_label: instance
+      - action: labelmap
+        regex: __meta_kubernetes_service_label_(.+)
+      - source_labels:
+        - __meta_kubernetes_namespace
+        target_label: kubernetes_namespace
+      - source_labels:
+        - __meta_kubernetes_service_name
+        target_label: kubernetes_name
+    - job_name: kubernetes-pods
+      kubernetes_sd_configs:
+      - role: pod
+      relabel_configs:
+      - action: keep
+        regex: true
+        source_labels:
+        - __meta_kubernetes_pod_annotation_prometheus_io_scrape
+      - action: replace
+        regex: (.+)
+        source_labels:
+        - __meta_kubernetes_pod_annotation_prometheus_io_path
+        target_label: __metrics_path__
+      - action: replace
+        regex: ([^:]+)(?::\d+)?;(\d+)
+        replacement: $1:$2
+        source_labels:
+        - __address__
+        - __meta_kubernetes_pod_annotation_prometheus_io_port
+        target_label: __address__
+      - action: labelmap
+        regex: __meta_kubernetes_pod_label_(.+)
+      - action: replace
+        source_labels:
+        - __meta_kubernetes_namespace
+        target_label: kubernetes_namespace
+      - action: replace
+        source_labels:
+        - __meta_kubernetes_pod_name
+        target_label: kubernetes_pod_name
+
+    alerting:
+      alertmanagers:
+      - kubernetes_sd_configs:
+          - role: pod
+        tls_config:
+          ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+        bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+        relabel_configs:
+        - source_labels: [__meta_kubernetes_namespace]
+          regex: monitoring
+          action: keep
+        - source_labels: [__meta_kubernetes_pod_label_app]
+          regex: prometheus
+          action: keep
+        - source_labels: [__meta_kubernetes_pod_label_component]
+          regex: alertmanager
+          action: keep
+        - source_labels: [__meta_kubernetes_pod_container_port_number]
+          regex:
+          action: drop
+  rules: |
+    {}
+kind: ConfigMap
+metadata:
+  labels:
+    app: prometheus
+  name: monitor-prometheus-server
+  namespace: monitoring
