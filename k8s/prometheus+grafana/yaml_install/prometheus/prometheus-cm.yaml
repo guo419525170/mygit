@@ -231,7 +231,7 @@ data:
       smtp_smarthost: 'smtp.163.com:25'
       smtp_from: '13411895953@163.com'
       smtp_auth_username: '13411895953@163.com'
-      smtp_auth_password: 'guojinxing88'
+      smtp_auth_password: '12345'
       smtp_require_tls: false
 
     route:
