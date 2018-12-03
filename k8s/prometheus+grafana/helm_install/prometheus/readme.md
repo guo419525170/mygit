@@ -4,8 +4,8 @@
 
 
 ##安装说明
-prom-alertsmanager.yaml为告警通知配置
-prom-alertrules.yaml设置告警规则
++ prom-alertsmanager.yaml为告警通知配置
++ prom-alertrules.yaml设置告警规则
 
 
 一、安装配置prometheus
@@ -33,7 +33,7 @@ helms install \
 ```	  
 
 三、管理操作
-升级（修改配置）：修改配置请在prom-settings.yaml prom-alertsmanager.yaml 等文件中进行，保存后执行：
++ 升级（修改配置）：修改配置请在prom-settings.yaml prom-alertsmanager.yaml 等文件中进行，保存后执行：
 # 修改prometheus
 ``` bash
 helms upgrade monitor -f prom-settings.yaml -f prom-alertsmanager.yaml -f prom-alertrules.yaml prometheus
