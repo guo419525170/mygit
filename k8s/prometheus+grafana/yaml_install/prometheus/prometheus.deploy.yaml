@@ -1,20 +1,21 @@
-apiVersion: extensions/v1beta1
+---
+apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   labels:
-    k8s-app: prometheus
+    name: prometheus-deployment
   name: prometheus
-  namespace: kube-ops
+  namespace: kube-system
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: prometheus
   template:
     metadata:
       labels:
-        k8s-app: prometheus
+        app: prometheus
     spec:
-      serviceAccountName: prometheus
-      securityContext:
-        runAsUser: 0
       containers:
       - image: prom/prometheus:v2.0.0
         name: prometheus
@@ -28,22 +29,18 @@ spec:
         ports:
         - containerPort: 9090
           protocol: TCP
-          name: http
         volumeMounts:
         - mountPath: "/prometheus"
           name: data
         - mountPath: "/etc/prometheus"
           name: config-volume
-        - name: host-time
-          mountPath: /etc/localtime
-          readOnly: true 
 #        resources:
 #          requests:
 #            cpu: 100m
 #            memory: 100Mi
 #          limits:
-#            cpu: 200m
-#            memory: 1Gi
+#            cpu: 500m
+#            memory: 2500Mi
       - image: quay.io/prometheus/alertmanager:v0.12.0
         name: alertmanager
         imagePullPolicy: IfNotPresent
@@ -57,13 +54,7 @@ spec:
         volumeMounts:
         - name: alertmanager-config-volume
           mountPath: /etc/alertmanager
-#        resources:
-#          requests:
-#            cpu: 50m
-#            memory: 50Mi
-#          limits:
-#            cpu: 200m
-#            memory: 200Mi
+      serviceAccountName: prometheus
       volumes:
       - name: data
         emptyDir: {}
@@ -73,6 +64,3 @@ spec:
       - name: alertmanager-config-volume
         configMap:
           name: alertmanager
-      - name: host-time
-        hostPath:
-          path: /etc/localtime
