@@ -113,6 +113,10 @@ spec:
         name: traefik-ingress-lb
     spec:
       serviceAccountName: traefik-ingress-controller
+#      hostNetwork: true
+#      nodeSelector:
+#        role: mysqlnode
+
       terminationGracePeriodSeconds: 60
       containers:
       - image: traefik:v1.7.2
@@ -129,7 +133,7 @@ spec:
         ports:
         - name: http
           containerPort: 80
-          hostPort: 80
+          hostPort: 80    ###80映射到80，和network网络一起使用，不用创建svc
           protocol: TCP
         - name: https
           containerPort: 443

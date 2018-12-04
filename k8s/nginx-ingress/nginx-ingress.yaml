@@ -150,6 +150,10 @@ spec:
         prometheus.io/scrape: 'true'
     spec:
       serviceAccountName: nginx-ingress-serviceaccount
+ #     hostNetwork: true
+ #     nodeSelector:
+ #       role: mysqlnode
+
       containers:
         - name: nginx-ingress-controller
           image: quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.18.0
@@ -181,6 +185,7 @@ spec:
           ports:
           - name: http
             containerPort: 80
+#            hostPort: 80    #80映射到80,和network网络一起使用，不用创建svc
           - name: https
             containerPort: 443
           livenessProbe:
