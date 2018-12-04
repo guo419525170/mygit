@@ -5,7 +5,7 @@ metadata:
   labels:
     name: prometheus-deployment
   name: prometheus
-  namespace: kube-system
+  namespace: kube-ops
 spec:
   replicas: 1
   selector:
