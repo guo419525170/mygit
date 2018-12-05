@@ -3,6 +3,21 @@
   - Kubernetes 1.10+ with Beta APIs
   - Helm 2.10+ (For a workaround using an earlier version see [below](#helm-210-workaround))
 
++ 安装
+``` bash
+helm install ./prometheus-operator --namespace prometheus-operator --name prometheus-operator \
+    --set prometheus.ingress.enabled=true \
+    --set prometheus.ingress.hosts[0]=prometheus.test.com \
+    --set prometheus.ingress.annotations."kubernetes\.io/ingress\.class"=traefik \
+    --set alertmanager.ingress.enabled=true \
+    --set alertmanager.ingress.hosts[0]=alertmanager.test.com \
+    --set alertmanager.ingress.annotations."kubernetes\.io/ingress\.class"=traefik \
+    --set grafana.ingress.enabled=true \
+    --set grafana.ingress.hosts[0]=grafana.test.com \
+    --set grafana.ingress.annotations."kubernetes\.io/ingress\.class"=traefik \
+    --tls
+```
+
 
 Installs [prometheus-operator](https://github.com/coreos/prometheus-operator) to create/configure/manage Prometheus clusters atop Kubernetes.
 
