@@ -4,7 +4,7 @@ serverFiles:
     - name: k8s_alert_rules
       rules:
       # ALERT when container memory usage exceed 90%
-      - alert: container_mem_over_30
+      - alert: container_mem_over_90
         expr: (sum(container_memory_working_set_bytes{image!="",name=~"^k8s_.*", pod_name!=""}) by (pod_name)) / (sum (container_spec_memory_limit_bytes{image!="",name=~"^k8s_.*", pod_name!=""}) by (pod_name)) > 0.9 and (sum(container_memory_working_set_bytes{image!="",name=~"^k8s_.*", pod_name!=""}) by (pod_name)) / (sum (container_spec_memory_limit_bytes{image!="",name=~"^k8s_.*", pod_name!=""}) by (pod_name)) < 2
         for: 2m
         annotations:
@@ -12,12 +12,15 @@ serverFiles:
           description: "Memory Usage of Pod {{ $labels.pod_name }} on {{ $labels.kubernetes_io_hostname }} has exceeded 90% for more than 2 minutes."
 
       # ALERT when node is down
-      - alert: node_down
+      - alert: InstanceDown
         expr: up == 0
         for: 60s
+        labels:
+          severity: page
         annotations:
-          summary: "Node {{ $labels.kubernetes_io_hostname }} is down"
-          description: "Node {{ $labels.kubernetes_io_hostname }} is down"
+           summary: "Instance {{$labels.instance}} down"
+           description: "{{$labels.instance}} of job {{$labels.job}} has been down for more than 1 minutes."
+     ###node
       - alert: NodeFilesystemUsage
         expr: (node_filesystem_size{device="rootfs"} - node_filesystem_free{device="rootfs"}) / node_filesystem_size{device="rootfs"} * 100 > 80
         for: 2m
@@ -42,6 +45,9 @@ serverFiles:
         annotations:
           summary: "{{$labels.instance}}: High CPU usage detected"
           description: "{{$labels.instance}}: CPU usage is above 80% (current value is: {{ $value }}"
+
+
+      ###pod
       - alert: PodMemUsage
         expr: container_memory_usage_bytes{container_name!=""} / container_spec_memory_limit_bytes{container_name!=""}  *100 != +Inf > 80
         for: 2m
