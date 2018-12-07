@@ -1,0 +1,21 @@
+alertmanagerFiles:
+  alertmanager.yml:
+    global:
+      smtp_smarthost: 'smtp.163.com:25'
+      smtp_from: '13411895953@163.com'
+      smtp_auth_username: '13411895953@163.com'
+      smtp_auth_password: 'guojinxing88'
+      smtp_require_tls: false
+
+    route:
+      group_by: ['alertname', 'pod_name']
+      group_wait: 10s
+      group_interval: 5m
+      receiver: AlertMail
+      repeat_interval: 3h
+
+    receivers:
+    - name: 'AlertMail'
+      email_configs:
+      - to: '419525170@qq.com'
+
