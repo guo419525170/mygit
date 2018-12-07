@@ -1,22 +1,14 @@
 global:
   resolve_timeout: 5m
-  smtp_smarthost: 'smtp.163.com:25'
-  smtp_from: '13411895953@163.com'
-  smtp_auth_username: '13411895953@163.com'
-  smtp_auth_password: 'guojinxing88'
-  smtp_require_tls: false
-
 route:
   group_by: ['job']
   group_wait: 30s
   group_interval: 5m
   repeat_interval: 12h
-  receiver: 'AlertMail'
+  receiver: 'null'
   routes:
   - match:
       alertname: DeadMansSwitch
-    receiver: 'AlertMail'
+    receiver: 'null'
 receivers:
-- name: 'AlertMail'
-  email_configs:
-  - to: '419525170@qq.com'
+- name: 'null'

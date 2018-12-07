@@ -1,10 +1,5 @@
 ###文档说明
 
-##安装说明
-+ prom-alertsmanager.yaml为告警通知配置
-+ prom-alertrules.yaml设置告警规则
-
-
 + 安装配置
 
 
@@ -23,3 +18,5 @@ kubectl apply -f ExtraAddons/prometheus/prometheus/
 kubectl apply -f ExtraAddons/prometheus/servicemonitor/
 ```	  
 
++ 告警通知没设置
++ 配置文件在alertmanater的config目录
