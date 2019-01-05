@@ -24,12 +24,12 @@ CREATE TABLE `db_sync` (
   `user_dest` varchar(64) NOT NULL COMMENT '目标数据库用户',
   `password_dest` varchar(128) NOT NULL COMMENT '目标数据库密码',
   `db_dest` varchar(64) NOT NULL COMMENT '目标数据库schema',
-  `created_dt` timestamp NULL NOT CURRENT_TIMESTAMP COMMENT '数据行创建时间',
   `comment` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='数据库表结构同步表';
 
-
++ 再把需要同步的数据库信息写入
+insert into db_sync values('1','172.17.100.220', '3306','root','123456','dev','172.17.100.220','3306','root','123456','test-haian','haian');
 
 在main函数中修改连接该数据库信息
 con=pymysql.connect(host='***',user='***',passwd='***', db='***')
