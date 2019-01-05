@@ -1,1 +1,0 @@
-alter table tb_recharge_ladder modify column os varchar(64) not null COMMENT 'money元宝,gold金币,treas宝箱,jipaiqi1一次性记牌器,jipaiqi2限时性记牌器,goldfield1金币场新手充值,goldfield2金币场首冲礼包,goldfieldNewYear金币场新春红包' AFTER id ;
