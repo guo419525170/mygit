@@ -29,7 +29,10 @@ CREATE TABLE `db_sync` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='数据库表结构同步表';
 
 + 再把需要同步的数据库信息写入
+``` bash
 insert into db_sync values('1','172.17.100.220', '3306','root','123456','dev','172.17.100.220','3306','root','123456','test-haian','haian');
+
+```
 
 在main函数中修改连接该数据库信息
 con=pymysql.connect(host='***',user='***',passwd='***', db='***')
