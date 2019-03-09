@@ -9,8 +9,8 @@ sentinel = Sentinel([('172.17.100.50', 26379),('172.17.100.50', 26479)],socket_t
 def subtraction():
  
 	for a in range(50000):
-        	name = 'zhoumeng' + str(a)
-		key = 'xiaoyu' + str(a) 
+        	name = 'neirong' + str(a)
+		key = 'testkey' + str(a) 
 		try:
     			master = sentinel.master_for('mymaster', socket_timeout=0.5, password='123')
     			master.set(name, key)
