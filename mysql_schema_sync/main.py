@@ -37,7 +37,7 @@ if __name__ == '__main__':
     cur_path = os.path.abspath(os.curdir)
     cur_time= time.strftime('%Y%m%d_%H%M%S',time.localtime(time.time()))
     out_put=(cur_path + '/logs/' + 'dbsync' + cur_time + '.sql')
-    con=pymysql.connect(host='172.18.247.53',user='root',passwd='JTCF@2017', db='sync')
+    con=pymysql.connect(host='172.18.247.51',user='root',passwd='JTCF@2017', db='sync')
     cursor=con.cursor()
     try:
         sql = "select  server_source, port_source, user_source, password_source, db_source," \
@@ -99,8 +99,9 @@ if __name__ == '__main__':
                     column_type=clumntype_get(srccoursor,tab,column,db_source)
                     front_column = front_clumn_get(srccoursor, tab, db_source,column)
                     #print(front_column)
-                    sql=column_sql(tab,column,column_type,'a',front_column)
-                    f.write(sql+'\n')
+                    if len(front_column):
+                        sql=column_sql(tab,column,column_type,'a',front_column)
+                        f.write(sql+'\n')
         #source,target中都有，需要对比，并修改
             for column in same_column:
                 source_column_type=clumntype_get(srccoursor,tab,column,db_source)
@@ -111,8 +112,9 @@ if __name__ == '__main__':
                 if operator.eq(source_column_type,targte_column_type):
                     continue
                 else:
-                    sql=column_sql(tab,column,source_column_type,'c',front_column)
-                    f.write(sql+'\n')
+                    if len(front_column) > 0:
+                        sql=column_sql(tab,column,source_column_type,'c',front_column)
+                        f.write(sql+'\n')
         # source中没有，target中有，需要删除
             if del_column:
                 for column in del_column:
