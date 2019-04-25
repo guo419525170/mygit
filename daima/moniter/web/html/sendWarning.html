@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>发出的告警信息</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+
+    <style>
+      #app {
+        padding: 20px;
+      }
+      .title {
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+      .pagination {
+        margin: 20px 0;
+      }
+      [v-cloak] {
+        display: none;
+      }
+      .chose{
+        margin: 0 0 10px 0
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div id="app">
+        <div class="title flex-box flex-v-c" v-cloak>发出的告警信息-[ {{ env }} ]</div>
+        <div class="chose">
+            <el-select
+        v-model="env"
+        style="margin-right:20px"
+        placeholder="岳阳"
+        size="medium"
+        @change="selectAction"
+      >
+        <el-option
+          v-for="item in selectOptions"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value"
+        />
+      </el-select>
+      </div>
+      <template> </template>
+      <template>
+        <el-table
+          :data="currentPage"
+          border
+          style="width: 100%"
+          stripe
+          v-loading="listLoading"
+          element-loading-text="Loading"
+        >
+          <el-table-column
+            align="center"
+            prop="datetime"
+            label="告警时间"
+            width="180"
+          >
+          </el-table-column>
+          <el-table-column
+            align="center"
+            prop="hostname"
+            label="告警主机"
+            width="180"
+          >
+          </el-table-column>
+          <el-table-column prop="error_log" label="告警日志"> </el-table-column>
+        </el-table>
+        <div class="pagination">
+          <el-pagination
+            background
+            layout="prev, pager, next"
+            @current-change="currentChange"
+            :total="total"
+          >
+          </el-pagination>
+        </div>
+      </template>
+    </div>
+  </body>
+  <script src="../js/vue.min.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="../js/axios.min.js"></script>
+  <script src="../js/axiosConf.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return {
+          env: 'yueyang',
+          total: '',
+          selectOptions: [
+            {value: 'yueyang',label: '岳阳'},
+            {value: 'shaoyang',label: '邵阳'},
+            {value: 'jinzhong',label: '晋中'},
+            {value: 'js3mj',label: '江苏'},
+            {value: 'haian',label: '海安'},
+            {value: 'huaian',label: '淮安'},
+            {value: 'nantong',label: '南通'},
+            {value: 'xuzhou',label: '徐州'},
+            {value: 'yongzhou',label: '永州'},
+            {value: 'xiangxiang',label: '湘乡'},
+            {value: 'hengyang',label: '衡阳'},
+            {value: 'leiyang',label: '耒阳'},
+          ],
+          listLoading: true,
+          currentPage: [],
+          tableData: []
+        }
+      },
+      watch: {},
+      methods: {
+        allParams: function() {
+          var string_a = window.location.href.split('?')
+          if (string_a.length > 1) {
+            var string = string_a[1].split('&')
+            var res = {}
+            for (var i = 0; i < string.length; i++) {
+              var str = string[i].split('=')
+              res[str[0]] = str[1]
+            }
+            console.log(res)
+            return res
+          } else {
+            console.log('没有参数')
+          }
+        },
+        selectAction () {
+          this.getRecordData()
+        },
+        closeWin: function() {
+          var iframe = window.parent.document.getElementById('iframe')
+          iframe.parentNode.removeChild(iframe)
+        },
+        currentChange: function(page) {
+          this.currentPage = this.tableData[page - 1]
+        },
+        group: function(array, subGroupLength) {
+          //拆分数组
+          let index = 0
+          let newArray = []
+          while (index < array.length) {
+            newArray.push(array.slice(index, (index += subGroupLength)))
+          }
+          this.tableData = newArray
+        },
+
+        init: function() {
+          this.total = this.tableData.length
+          this.group(this.tableData, 10) //拆分数组
+          this.currentPage = this.tableData[0] //初始化取第一项
+        },
+
+        /**列表数据**/
+        getRecordData: function(param) {
+          var that = this
+          that.listLoading = true
+          axios
+            .get('https://errorlog.5292game.com/api/waringinfo/' + that.env, {
+              params: {}
+            })
+            .then(function(res) {
+              that.listLoading = false
+              that.tableData = res
+              that.init()
+            })
+        }
+      },
+      created: function() {
+        this.getRecordData()
+      }
+    })
+  </script>
+</html>

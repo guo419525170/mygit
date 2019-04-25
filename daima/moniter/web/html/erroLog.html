@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>告警日志</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+
+    <style>
+      #app {
+        padding: 20px;
+      }
+      .title {
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+      .pagination {
+        margin: 20px 0;
+      }
+      [v-cloak] {
+        display: none;
+      }
+      .chose{
+        margin: 0 0 10px 0
+      }
+      .el-form-item {
+    margin-bottom: 0px;
+         }
+         .padLeft{
+           padding: 0 0 0 35px
+         }
+         .el-table__expanded-cell[class*=cell] {
+          padding: 20px 6px;
+        }
+        .el-form-item__content,.el-form-item__label  {
+    line-height: 18px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="app">
+        <div class="title flex-box flex-v-c" v-cloak>告警日志-[ {{ env }} ]</div>
+        <div class="chose">
+            <el-select
+        v-model="env"
+        style="margin-right:20px"
+        placeholder="岳阳"
+        size="medium"
+        @change="selectAction"
+      >
+        <el-option
+          v-for="item in selectOptions"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value"
+        />
+      </el-select>
+      </div>
+      <template> </template>
+      <template>
+        <el-table
+          :data="currentPage"
+          border
+          style="width: 100%"
+          stripe
+          v-loading="listLoading"
+          element-loading-text="Loading"
+        >
+        <el-table-column prop="errortype" type="expand"  align="center">
+            <template slot-scope="props">
+                <el-form label-position="left" inline class="demo-table-expand">
+                  <el-form-item label="错误详情">
+                    <div v-for='(item,index) in props.row.error_log' :class="{padLeft:index>0}" >{{item}}</div>
+                  </el-form-item>
+                </el-form>
+              </template>
+        </el-table-column>
+          <el-table-column prop="errortype"  label="错误类型" width="200" align="center">
+              
+          </el-table-column>
+          <el-table-column
+            align="center"
+            prop="datetime"
+            label="告警时间"
+            width="180"
+          >
+          </el-table-column>
+          <el-table-column
+            align="center"
+            prop="hostname"
+            label="告警主机"
+            width="180"
+          >
+          </el-table-column>
+          <el-table-column prop="error_log" label="错误信息"> </el-table-column>
+        </el-table>
+        <div class="pagination">
+          <el-pagination
+            background
+            layout="prev, pager, next"
+            @current-change="currentChange"
+            :total="total"
+          >
+          </el-pagination>
+        </div>
+      </template>
+    </div>
+  </body>
+  <script src="../js/vue.min.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="../js/axios.min.js"></script>
+  <script src="../js/axiosConf.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return {
+          env: 'yueyang',
+          total: '',
+          selectOptions: [
+            {value: 'yueyang',label: '岳阳'},
+            {value: 'shaoyang',label: '邵阳'},
+            {value: 'jinzhong',label: '晋中'},
+            {value: 'js3mj',label: '江苏'},
+            {value: 'haian',label: '海安'},
+            {value: 'huaian',label: '淮安'},
+            {value: 'nantong',label: '南通'},
+            {value: 'xuzhou',label: '徐州'},
+            {value: 'yongzhou',label: '永州'},
+            {value: 'xiangxiang',label: '湘乡'},
+            {value: 'hengyang',label: '衡阳'},
+            {value: 'leiyang',label: '耒阳'},
+          ],
+          listLoading: false,
+          currentPage: [],
+          tableData: [
+            {
+              datetime: "2019-04-20 09:25:34",
+              error_log: ['Error: ETIMEDOUT', ' at null._onTimeout (/root/game-server/node_modules/request/request.js:773:21)', ' at Timer.listOnTimeout (timers.js:92:15)'],
+              errortype: "Error: ETIMEDOUT",
+              hostname: "yueyang-pkroom-4"
+            },
+            {
+              datetime: "2019-04-20 09:25:34",
+              error_log: ['Error: ETIMEDOUT123123', 'at null._onTimeout (/root/game-server/node_modules/request/request.js:773:21)', 'at Timer.listOnTimeout (timers.js:92:15)'],
+              errortype: "Error: ETIMEDOUT",
+              hostname: "yueyang-pkroom-4"
+            }
+          ],
+        }
+      },
+      watch: {},
+      methods: {
+        allParams: function() {
+          var string_a = window.location.href.split('?')
+          if (string_a.length > 1) {
+            var string = string_a[1].split('&')
+            var res = {}
+            for (var i = 0; i < string.length; i++) {
+              var str = string[i].split('=')
+              res[str[0]] = str[1]
+            }
+            console.log(res)
+            return res
+          } else {
+            console.log('没有参数')
+          }
+        },
+        selectAction () {
+          this.getRecordData()
+        },
+        closeWin: function() {
+          var iframe = window.parent.document.getElementById('iframe')
+          iframe.parentNode.removeChild(iframe)
+        },
+        currentChange: function(page) {
+          this.currentPage = this.tableData[page - 1]
+        },
+        group: function(array, subGroupLength) {
+          //拆分数组
+          let index = 0
+          let newArray = []
+          while (index < array.length) {
+            newArray.push(array.slice(index, (index += subGroupLength)))
+          }
+          this.tableData = newArray
+        },
+
+        init: function() {
+          this.total = this.tableData.length
+          this.group(this.tableData, 10) //拆分数组
+          this.currentPage = this.tableData[0] //初始化取第一项
+        },
+
+        /**列表数据**/
+        getRecordData: function(param) {
+          var that = this
+          that.listLoading = true
+          axios
+            .get('https://errorlog.5292game.com/api/showlog/' + that.env, {
+              params: {}
+            })
+            .then(function(res) {
+              that.listLoading = false
+              that.tableData = res
+              that.init()
+            })
+        }
+      },
+      created: function() {
+        this.getRecordData()
+      }
+    })
+  </script>
+</html>

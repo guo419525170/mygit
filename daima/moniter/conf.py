@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+#数据库连接参数
+proxyhost="172.18.247.104"
+yueyanghost="172.18.247.95"
+hengyanghost="172.18.247.96"
+leiyanghost="172.18.247.93"
+shaoyanghost="172.18.247.92"
+xiangxianghost="172.18.247.201""
+yongzhouhost="172.18.247.66"
+#host提供就告警脚本连接
+host='127.0.0.1'
+user="test"
+password="test123"
+database="moniter"
+charset="utf8"
+#监控日志所在目录
+logpath="/root/logs/game/"
+#微信接口
+url='http://wechaty.jtcf.com/message/rd'
