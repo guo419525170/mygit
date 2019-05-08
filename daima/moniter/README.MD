@@ -11,3 +11,30 @@
 4、配置文件
 在各个服务器配置conf.py脚本，alarm.py、 showwebnew.py和write_errorlog.py需要引用该模块
 5、nginx配置文件在web目录
+6、创建一个名为moniter的数据库以及alarm_info、error_info、exclusion_info三个表
+
+CREATE TABLE `alarm_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `datetime` datetime NOT NULL,
+  `hostname` varchar(128) NOT NULL,
+  `error_log` longtext NOT NULL,
+  `channel` varchar(128) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `datetime_idx` (`datetime`)
+) ENGINE=InnoDB AUTO_INCREMENT=118 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `error_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `datetime` datetime NOT NULL,
+  `hostname` varchar(128) NOT NULL,
+  `error_log` longtext NOT NULL,
+  `errortype` varchar(1024) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `datetime_idx` (`datetime`)
+) ENGINE=InnoDB AUTO_INCREMENT=2306 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `exclusion_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `error_log` longtext NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
