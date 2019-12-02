@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>告警日志</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+
+    <style>
+      #app {
+        padding: 20px;
+      }
+      .title {
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+      .pagination {
+        margin: 20px 0;
+      }
+      [v-cloak] {
+        display: none;
+      }
+      .chose {
+        margin: 0 0 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="title flex-box flex-v-c" v-cloak>日志统计-[ {{ env }} ]</div>
+      <div class="flex-box flex-v-c chose">
+            <div>
+                    <el-select
+                v-model="env"
+                style="margin-right:20px"
+                placeholder="晋中"
+                size="medium"
+                @change="selectAction"
+              >
+                <el-option
+                  v-for="item in selectOptions"
+                  :key="item.value"
+                  :label="item.label"
+                  :value="item.value"
+                />
+              </el-select>
+              </div>
+              <div class="time">
+                <el-radio-group v-model="time" @change="choseTime">
+                  <el-radio-button label="day">日</el-radio-button>
+                  <el-radio-button label="week">周</el-radio-button>
+                  <el-radio-button label="month">月</el-radio-button>
+                </el-radio-group>
+              </div>
+      </div>
+     
+      <template>
+        <el-table
+          :data="currentPage"
+          border
+          style="width: 100%"
+          stripe
+          v-loading="listLoading"
+          element-loading-text="Loading"
+        >
+          <el-table-column
+            align="center"
+            prop="hostname"
+            label="告警主机"
+            width="180"
+          >
+          </el-table-column>
+          <el-table-column
+            prop="num"
+            label="告警次数"
+            width="120"
+            align="center"
+          >
+          </el-table-column>
+          <el-table-column prop="error_log" label="告警类型"> </el-table-column>
+        </el-table>
+        <div class="pagination">
+          <el-pagination
+            background
+            layout="prev, pager, next"
+            @current-change="currentChange"
+            :total="total"
+          >
+          </el-pagination>
+        </div>
+      </template>
+    </div>
+  </body>
+  <script src="../js/vue.min.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="../js/axios.min.js"></script>
+  <script src="../js/axiosConf.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return {
+          env: 'js3mj',
+          time: 'day',
+          selectOptions: [
+            {value: 'haian',label: '海安'},
+            {value: 'js3mj',label: '江苏'},
+            {value: 'xuzhou',label: '徐州'},
+            {value: 'nantong',label: '南通'},
+            {value: 'huaian',label: '淮安'},
+          ],
+          total: '',
+          listLoading: true,
+          currentPage: [],
+          tableData: []
+        }
+      },
+      watch: {},
+      methods: {
+        allParams: function() {
+          var string_a = window.location.href.split('?')
+          if (string_a.length > 1) {
+            var string = string_a[1].split('&')
+            var res = {}
+            for (var i = 0; i < string.length; i++) {
+              var str = string[i].split('=')
+              res[str[0]] = str[1]
+            }
+            console.log(res)
+            return res
+          } else {
+            console.log('没有参数')
+          }
+        },
+        choseTime() {
+          this.getRecordData()
+        },
+        selectAction () {
+          this.getRecordData()
+        },
+        currentChange: function(page) {
+          this.currentPage = this.tableData[page - 1]
+        },
+        group: function(array, subGroupLength) {
+          //拆分数组
+          let index = 0
+          let newArray = []
+          while (index < array.length) {
+            newArray.push(array.slice(index, (index += subGroupLength)))
+          }
+          this.tableData = newArray
+        },
+
+        init: function() {
+          this.total = this.tableData.length
+          this.group(this.tableData, 10) //拆分数组
+          this.currentPage = this.tableData[0] //初始化取第一项
+        },
+
+        /**列表数据**/
+        getRecordData: function(param) {
+          var that = this
+          if (location.href.indexOf('?') > 0) {
+            that.allParams().env
+          }
+          that.listLoading = true
+          axios
+            .get(
+              'http://hdlog.tocooltech.com/api/count/env=' +
+                that.env +
+                '&time=' +
+                that.time,
+              {
+                params: {}
+              }
+            )
+            .then(function(res) {
+              that.listLoading = false
+              that.tableData = res
+              that.init()
+            })
+        }
+      },
+      created: function() {
+        this.getRecordData()
+      }
+    })
+  </script>
+</html>

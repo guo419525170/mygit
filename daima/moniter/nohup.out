@@ -669,3 +669,1970 @@ OperationalError: (1054, "Unknown column 'status' in 'field list'")
 127.0.0.1:36452 - - [25/Apr/2019 14:00:55] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
 127.0.0.1:36458 - - [25/Apr/2019 14:00:56] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
 127.0.0.1:36470 - - [25/Apr/2019 14:00:56] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:44408 - - [25/Apr/2019 14:43:59] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44470 - - [25/Apr/2019 14:44:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44718 - - [25/Apr/2019 14:45:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57492 - - [25/Apr/2019 18:04:44] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57786 - - [25/Apr/2019 18:15:13] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57796 - - [25/Apr/2019 18:15:18] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:57832 - - [25/Apr/2019 18:16:54] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:57842 - - [25/Apr/2019 18:17:04] "HTTP/1.1 GET /api/count/env=shaoyang&time=day" - 200 OK
+127.0.0.1:57854 - - [25/Apr/2019 18:17:21] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:57860 - - [25/Apr/2019 18:17:23] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:57868 - - [25/Apr/2019 18:17:24] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:57882 - - [25/Apr/2019 18:17:54] "HTTP/1.1 GET /api/count/env=yueyang&time=month" - 200 OK
+127.0.0.1:57896 - - [25/Apr/2019 18:18:02] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:57902 - - [25/Apr/2019 18:18:03] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:57908 - - [25/Apr/2019 18:18:07] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:57918 - - [25/Apr/2019 18:18:13] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:57930 - - [25/Apr/2019 18:18:36] "HTTP/1.1 GET /api/waringinfo/jinzhong" - 200 OK
+127.0.0.1:57942 - - [25/Apr/2019 18:18:42] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57948 - - [25/Apr/2019 18:18:46] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:58220 - - [25/Apr/2019 18:30:59] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53176 - - [26/Apr/2019 09:53:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53280 - - [26/Apr/2019 09:57:41] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:53292 - - [26/Apr/2019 09:57:57] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:53334 - - [26/Apr/2019 09:59:35] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53348 - - [26/Apr/2019 09:59:58] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:53360 - - [26/Apr/2019 10:00:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53484 - - [26/Apr/2019 10:03:34] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53492 - - [26/Apr/2019 10:03:42] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:53512 - - [26/Apr/2019 10:04:07] "HTTP/1.1 GET /api/count/env=shaoyang&time=day" - 200 OK
+127.0.0.1:53518 - - [26/Apr/2019 10:04:09] "HTTP/1.1 GET /api/count/env=shaoyang&time=week" - 200 OK
+127.0.0.1:53524 - - [26/Apr/2019 10:04:14] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:53530 - - [26/Apr/2019 10:04:19] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:53536 - - [26/Apr/2019 10:04:20] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:53548 - - [26/Apr/2019 10:04:26] "HTTP/1.1 GET /api/count/env=yueyang&time=month" - 200 OK
+127.0.0.1:53554 - - [26/Apr/2019 10:04:33] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:53562 - - [26/Apr/2019 10:04:36] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:53568 - - [26/Apr/2019 10:04:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53644 - - [26/Apr/2019 10:07:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53650 - - [26/Apr/2019 10:07:10] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:53656 - - [26/Apr/2019 10:07:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53662 - - [26/Apr/2019 10:07:19] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:53670 - - [26/Apr/2019 10:07:23] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:53684 - - [26/Apr/2019 10:07:27] "HTTP/1.1 GET /api/count/env=yueyang&time=month" - 200 OK
+127.0.0.1:53690 - - [26/Apr/2019 10:07:28] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:53696 - - [26/Apr/2019 10:07:29] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:35488 - - [26/Apr/2019 14:02:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35494 - - [26/Apr/2019 14:02:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35504 - - [26/Apr/2019 14:03:09] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:35512 - - [26/Apr/2019 14:03:12] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:35518 - - [26/Apr/2019 14:03:15] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:35530 - - [26/Apr/2019 14:03:25] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35536 - - [26/Apr/2019 14:03:26] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:35542 - - [26/Apr/2019 14:03:31] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:35548 - - [26/Apr/2019 14:03:32] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37158 - - [27/Apr/2019 09:59:37] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37172 - - [27/Apr/2019 10:00:00] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37374 - - [27/Apr/2019 10:09:05] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37386 - - [27/Apr/2019 10:09:22] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:37932 - - [27/Apr/2019 10:23:33] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:37940 - - [27/Apr/2019 10:23:39] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:44740 - - [27/Apr/2019 13:42:45] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44760 - - [27/Apr/2019 13:43:26] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:44818 - - [27/Apr/2019 13:45:30] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45948 - - [27/Apr/2019 14:35:04] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51246 - - [27/Apr/2019 18:26:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51286 - - [27/Apr/2019 18:27:47] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51292 - - [27/Apr/2019 18:27:49] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51300 - - [27/Apr/2019 18:28:05] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:51332 - - [27/Apr/2019 18:29:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51340 - - [27/Apr/2019 18:29:14] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:51458 - - [27/Apr/2019 18:33:22] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51470 - - [27/Apr/2019 18:33:28] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:51476 - - [27/Apr/2019 18:33:38] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:51488 - - [27/Apr/2019 18:33:48] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51494 - - [27/Apr/2019 18:33:51] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:51502 - - [27/Apr/2019 18:33:59] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:51508 - - [27/Apr/2019 18:34:05] "HTTP/1.1 GET /api/waringinfo/jinzhong" - 200 OK
+127.0.0.1:51520 - - [27/Apr/2019 18:34:11] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51526 - - [27/Apr/2019 18:34:16] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51532 - - [27/Apr/2019 18:34:20] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:51538 - - [27/Apr/2019 18:34:24] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:51552 - - [27/Apr/2019 18:34:41] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:51558 - - [27/Apr/2019 18:34:42] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:51564 - - [27/Apr/2019 18:34:46] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:51574 - - [27/Apr/2019 18:34:47] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51580 - - [27/Apr/2019 18:34:48] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:51586 - - [27/Apr/2019 18:34:50] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51606 - - [27/Apr/2019 18:35:23] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:51612 - - [27/Apr/2019 18:35:24] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:51620 - - [27/Apr/2019 18:35:25] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51626 - - [27/Apr/2019 18:35:27] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:51636 - - [27/Apr/2019 18:35:30] "HTTP/1.1 GET /api/count/env=jinzhong&time=day" - 200 OK
+127.0.0.1:51642 - - [27/Apr/2019 18:35:34] "HTTP/1.1 GET /api/count/env=jinzhong&time=week" - 200 OK
+127.0.0.1:51648 - - [27/Apr/2019 18:35:35] "HTTP/1.1 GET /api/count/env=jinzhong&time=month" - 200 OK
+127.0.0.1:45372 - - [28/Apr/2019 10:13:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46318 - - [28/Apr/2019 10:45:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46332 - - [28/Apr/2019 10:45:31] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:55856 - - [28/Apr/2019 15:53:49] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55868 - - [28/Apr/2019 15:54:04] "HTTP/1.1 GET /api/showlog/xiangxiang" - 200 OK
+127.0.0.1:55876 - - [28/Apr/2019 15:54:11] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:55882 - - [28/Apr/2019 15:54:12] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:55888 - - [28/Apr/2019 15:54:14] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:55894 - - [28/Apr/2019 15:54:16] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:55900 - - [28/Apr/2019 15:54:19] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:55912 - - [28/Apr/2019 15:54:23] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:55918 - - [28/Apr/2019 15:54:25] "HTTP/1.1 GET /api/count/env=yueyang&time=month" - 200 OK
+127.0.0.1:55924 - - [28/Apr/2019 15:54:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55964 - - [28/Apr/2019 15:55:51] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55972 - - [28/Apr/2019 15:55:55] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:55984 - - [28/Apr/2019 15:56:07] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55990 - - [28/Apr/2019 15:56:12] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:56606 - - [28/Apr/2019 16:24:22] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56618 - - [28/Apr/2019 16:24:28] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:56624 - - [28/Apr/2019 16:24:31] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58966 - - [28/Apr/2019 18:09:15] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59646 - - [28/Apr/2019 18:39:48] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59658 - - [28/Apr/2019 18:39:58] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:54016 - - [29/Apr/2019 10:01:50] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54022 - - [29/Apr/2019 10:01:54] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:54070 - - [29/Apr/2019 10:03:18] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:54082 - - [29/Apr/2019 10:03:22] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54094 - - [29/Apr/2019 10:03:36] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:54158 - - [29/Apr/2019 10:05:52] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:54164 - - [29/Apr/2019 10:06:00] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54174 - - [29/Apr/2019 10:06:04] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:55696 - - [29/Apr/2019 11:02:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57528 - - [29/Apr/2019 11:46:37] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57534 - - [29/Apr/2019 11:46:42] "HTTP/1.1 GET /api/showlog/yongzhou" - 200 OK
+127.0.0.1:38082 - - [29/Apr/2019 17:07:13] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 139, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 46, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+UnboundLocalError: local variable 'port' referenced before assignment
+
+127.0.0.1:38088 - - [29/Apr/2019 17:07:16] "HTTP/1.1 GET /api/showlog/wangwang" - 500 Internal Server Error
+127.0.0.1:38136 - - [29/Apr/2019 17:08:45] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 141, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 31, in executesql
+    port,host = 22,conf.wangwanghost
+AttributeError: 'module' object has no attribute 'wangwanghost'
+
+127.0.0.1:38142 - - [29/Apr/2019 17:08:47] "HTTP/1.1 GET /api/showlog/wangwang" - 500 Internal Server Error
+127.0.0.1:38202 - - [29/Apr/2019 17:10:13] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38208 - - [29/Apr/2019 17:10:16] "HTTP/1.1 GET /api/showlog/wangwang" - 200 OK
+127.0.0.1:40982 - - [29/Apr/2019 17:39:59] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:40988 - - [29/Apr/2019 17:40:02] "HTTP/1.1 GET /api/count/env=wangwang&time=day" - 200 OK
+127.0.0.1:40994 - - [29/Apr/2019 17:40:04] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:41000 - - [29/Apr/2019 17:40:06] "HTTP/1.1 GET /api/waringinfo/wangwang" - 200 OK
+127.0.0.1:41006 - - [29/Apr/2019 17:40:08] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:41014 - - [29/Apr/2019 17:40:11] "HTTP/1.1 GET /api/excludelog/wangwang" - 200 OK
+127.0.0.1:36770 - - [05/May/2019 10:24:22] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37222 - - [05/May/2019 10:41:13] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37228 - - [05/May/2019 10:41:21] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37260 - - [05/May/2019 10:41:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37280 - - [05/May/2019 10:42:01] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37292 - - [05/May/2019 10:42:04] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 143, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 33, in executesql
+    port,host = 22,conf.fieldhost
+AttributeError: 'module' object has no attribute 'fieldhost'
+
+127.0.0.1:37416 - - [05/May/2019 10:42:17] "HTTP/1.1 GET /api/showlog/field" - 500 Internal Server Error
+127.0.0.1:37474 - - [05/May/2019 10:43:53] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37506 - - [05/May/2019 10:44:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 143, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 51, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1130, "Host '172.18.247.104' is not allowed to connect to this MySQL server")
+
+127.0.0.1:37512 - - [05/May/2019 10:44:45] "HTTP/1.1 GET /api/showlog/field" - 500 Internal Server Error
+127.0.0.1:37534 - - [05/May/2019 10:45:13] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 143, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 51, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1130, "Host '172.18.247.104' is not allowed to connect to this MySQL server")
+
+127.0.0.1:37542 - - [05/May/2019 10:45:17] "HTTP/1.1 GET /api/showlog/field" - 500 Internal Server Error
+127.0.0.1:37582 - - [05/May/2019 10:46:38] "HTTP/1.1 GET /api/.env" - 404 Not Found
+127.0.0.1:37808 - - [05/May/2019 10:56:33] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37814 - - [05/May/2019 10:56:36] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:37890 - - [05/May/2019 10:59:34] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37896 - - [05/May/2019 10:59:37] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:38002 - - [05/May/2019 11:04:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38008 - - [05/May/2019 11:04:19] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:38030 - - [05/May/2019 11:05:01] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:38036 - - [05/May/2019 11:05:03] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:38042 - - [05/May/2019 11:05:04] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:38080 - - [05/May/2019 11:06:23] "HTTP/1.1 GET /api/excludelog/field" - 200 OK
+127.0.0.1:38088 - - [05/May/2019 11:06:27] "HTTP/1.1 GET /api/excludelog/wangwang" - 200 OK
+127.0.0.1:38106 - - [05/May/2019 11:07:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38112 - - [05/May/2019 11:07:09] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:38124 - - [05/May/2019 11:07:12] "HTTP/1.1 GET /api/excludelog/leiyang" - 200 OK
+127.0.0.1:38130 - - [05/May/2019 11:07:14] "HTTP/1.1 GET /api/excludelog/wangwang" - 200 OK
+127.0.0.1:41440 - - [05/May/2019 12:46:35] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41458 - - [05/May/2019 12:46:49] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:41472 - - [05/May/2019 12:47:00] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41482 - - [05/May/2019 12:47:04] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:42154 - - [05/May/2019 13:05:36] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:42160 - - [05/May/2019 13:05:40] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:42468 - - [05/May/2019 13:19:33] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:42980 - - [05/May/2019 13:42:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:42992 - - [05/May/2019 13:42:23] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:43138 - - [05/May/2019 13:48:44] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43158 - - [05/May/2019 13:49:24] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:43164 - - [05/May/2019 13:49:26] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:43170 - - [05/May/2019 13:49:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45154 - - [05/May/2019 14:55:53] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45160 - - [05/May/2019 14:55:56] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:45168 - - [05/May/2019 14:56:04] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45180 - - [05/May/2019 14:56:14] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:45248 - - [05/May/2019 14:59:09] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46150 - - [05/May/2019 15:30:37] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46158 - - [05/May/2019 15:30:45] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46236 - - [05/May/2019 15:32:54] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:46250 - - [05/May/2019 15:33:16] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:46256 - - [05/May/2019 15:33:16] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:46262 - - [05/May/2019 15:33:21] "HTTP/1.1 GET /api/count/env=yueyang&time=month" - 200 OK
+127.0.0.1:46268 - - [05/May/2019 15:33:23] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46274 - - [05/May/2019 15:33:24] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:46280 - - [05/May/2019 15:33:24] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+2019-05-05 22:17:22,398| ERROR   | Secsh channel 0 open FAILED: Connection refused: Connect failed
+2019-05-05 22:17:22,416| ERROR   | Could not establish connection from ('127.0.0.1', 38450) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 143, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 51, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:60718 - - [05/May/2019 22:17:22] "HTTP/1.1 GET /api/showlog/yueyang" - 500 Internal Server Error
+2019-05-05 22:17:31,791| ERROR   | Secsh channel 0 open FAILED: Connection refused: Connect failed
+2019-05-05 22:17:31,809| ERROR   | Could not establish connection from ('127.0.0.1', 44507) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 79, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 51, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:60724 - - [05/May/2019 22:17:31] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 500 Internal Server Error
+2019-05-05 22:17:33,767| ERROR   | Secsh channel 0 open FAILED: Connection refused: Connect failed
+2019-05-05 22:17:33,785| ERROR   | Could not establish connection from ('127.0.0.1', 39063) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 131, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 51, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:60732 - - [05/May/2019 22:17:33] "HTTP/1.1 GET /api/waringinfo/yueyang" - 500 Internal Server Error
+2019-05-05 22:17:36,751| ERROR   | Secsh channel 0 open FAILED: Connection refused: Connect failed
+2019-05-05 22:17:36,770| ERROR   | Could not establish connection from ('127.0.0.1', 43315) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 79, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 51, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:60738 - - [05/May/2019 22:17:36] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 500 Internal Server Error
+2019-05-06 05:50:17,055| ERROR   | Secsh channel 0 open FAILED: Connection refused: Connect failed
+2019-05-06 05:50:17,072| ERROR   | Could not establish connection from ('127.0.0.1', 38733) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 143, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 51, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:42514 - - [06/May/2019 05:50:17] "HTTP/1.1 GET /api/showlog/yueyang" - 500 Internal Server Error
+127.0.0.1:42522 - - [06/May/2019 05:50:24] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+2019-05-06 05:50:45,713| ERROR   | Secsh channel 0 open FAILED: Connection refused: Connect failed
+2019-05-06 05:50:45,732| ERROR   | Could not establish connection from ('127.0.0.1', 33201) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 143, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 51, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:42534 - - [06/May/2019 05:50:45] "HTTP/1.1 GET /api/showlog/yueyang" - 500 Internal Server Error
+127.0.0.1:42546 - - [06/May/2019 05:50:53] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:47794 - - [06/May/2019 09:36:30] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47802 - - [06/May/2019 09:36:42] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:47808 - - [06/May/2019 09:36:47] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:47814 - - [06/May/2019 09:36:48] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:47824 - - [06/May/2019 09:36:51] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47838 - - [06/May/2019 09:37:15] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47844 - - [06/May/2019 09:37:16] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:47850 - - [06/May/2019 09:37:20] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47856 - - [06/May/2019 09:37:23] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:47864 - - [06/May/2019 09:37:26] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:47874 - - [06/May/2019 09:37:29] "HTTP/1.1 GET /api/count/env=shaoyang&time=day" - 200 OK
+127.0.0.1:47880 - - [06/May/2019 09:37:38] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:47886 - - [06/May/2019 09:37:39] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:47896 - - [06/May/2019 09:37:43] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:47902 - - [06/May/2019 09:37:47] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:47912 - - [06/May/2019 09:37:49] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:47918 - - [06/May/2019 09:37:52] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47924 - - [06/May/2019 09:37:52] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:47930 - - [06/May/2019 09:37:54] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:47940 - - [06/May/2019 09:38:06] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47958 - - [06/May/2019 09:38:30] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:50314 - - [06/May/2019 11:24:46] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:50570 - - [06/May/2019 11:36:00] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53390 - - [06/May/2019 13:43:19] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53396 - - [06/May/2019 13:43:22] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:56400 - - [06/May/2019 15:52:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56406 - - [06/May/2019 15:52:33] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56522 - - [06/May/2019 15:57:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56528 - - [06/May/2019 15:57:35] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:56538 - - [06/May/2019 15:57:40] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:56546 - - [06/May/2019 15:57:44] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56552 - - [06/May/2019 15:57:47] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:56558 - - [06/May/2019 15:57:52] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:56570 - - [06/May/2019 15:57:59] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:56576 - - [06/May/2019 15:58:05] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:56584 - - [06/May/2019 15:58:10] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:56786 - - [06/May/2019 16:07:09] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56984 - - [06/May/2019 16:13:21] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58490 - - [06/May/2019 17:15:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58498 - - [06/May/2019 17:15:33] "HTTP/1.1 GET /api/showlog/hengyang" - 200 OK
+127.0.0.1:58504 - - [06/May/2019 17:15:41] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:58516 - - [06/May/2019 17:15:49] "HTTP/1.1 GET /api/showlog/wangwang" - 200 OK
+127.0.0.1:58522 - - [06/May/2019 17:15:53] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:58528 - - [06/May/2019 17:16:00] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:58548 - - [06/May/2019 17:16:41] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58558 - - [06/May/2019 17:16:44] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:59412 - - [06/May/2019 17:51:48] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59430 - - [06/May/2019 17:51:53] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:60104 - - [06/May/2019 18:14:19] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43672 - - [06/May/2019 23:53:10] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60280 - - [07/May/2019 09:26:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60286 - - [07/May/2019 09:26:31] "HTTP/1.1 GET /api/showlog/xiangxiang" - 200 OK
+127.0.0.1:33504 - - [07/May/2019 10:13:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-07 10:13:22,059| ERROR   | Could not open connection to gateway
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 52, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1553, in __enter__
+    self.start()
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1295, in start
+    reason='Could not establish session to SSH gateway')
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1101, in _raise
+    raise exception(reason)
+BaseSSHTunnelForwarderError: Could not establish session to SSH gateway
+
+127.0.0.1:33512 - - [07/May/2019 10:13:22] "HTTP/1.1 GET /api/showlog/guizhou" - 500 Internal Server Error
+127.0.0.1:33640 - - [07/May/2019 10:17:09] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-07 10:17:12,434| ERROR   | Could not open connection to gateway
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 52, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1553, in __enter__
+    self.start()
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1295, in start
+    reason='Could not establish session to SSH gateway')
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1101, in _raise
+    raise exception(reason)
+BaseSSHTunnelForwarderError: Could not establish session to SSH gateway
+
+127.0.0.1:33646 - - [07/May/2019 10:17:12] "HTTP/1.1 GET /api/showlog/guizhou" - 500 Internal Server Error
+127.0.0.1:33866 - - [07/May/2019 10:23:00] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-07 10:23:03,922| ERROR   | Could not establish connection from ('127.0.0.1', 36365) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:33876 - - [07/May/2019 10:23:04] "HTTP/1.1 GET /api/showlog/guizhou" - 500 Internal Server Error
+127.0.0.1:33900 - - [07/May/2019 10:23:41] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-07 10:23:51,402| ERROR   | Could not establish connection from ('127.0.0.1', 34451) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:33906 - - [07/May/2019 10:23:51] "HTTP/1.1 GET /api/showlog/guizhou" - 500 Internal Server Error
+127.0.0.1:34050 - - [07/May/2019 10:29:23] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:34464 - - [07/May/2019 10:47:00] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:34850 - - [07/May/2019 11:03:21] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:34860 - - [07/May/2019 11:03:34] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:34872 - - [07/May/2019 11:03:46] "HTTP/1.1 GET /api/showlog/xiangxiang" - 200 OK
+127.0.0.1:34880 - - [07/May/2019 11:03:56] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:34926 - - [07/May/2019 11:05:34] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:34932 - - [07/May/2019 11:05:37] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:34944 - - [07/May/2019 11:05:43] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-07 11:19:54,882| ERROR   | Could not establish connection from ('127.0.0.1', 38220) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:35252 - - [07/May/2019 11:19:55] "HTTP/1.1 GET /api/showlog/guizhou" - 500 Internal Server Error
+127.0.0.1:35260 - - [07/May/2019 11:19:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-07 11:20:03,531| ERROR   | Could not establish connection from ('127.0.0.1', 40496) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:35266 - - [07/May/2019 11:20:03] "HTTP/1.1 GET /api/showlog/guizhou" - 500 Internal Server Error
+127.0.0.1:35326 - - [07/May/2019 11:21:07] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-07 11:21:13,304| ERROR   | Could not establish connection from ('127.0.0.1', 40487) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:35336 - - [07/May/2019 11:21:13] "HTTP/1.1 GET /api/showlog/guizhou" - 500 Internal Server Error
+127.0.0.1:35356 - - [07/May/2019 11:21:53] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:36216 - - [07/May/2019 11:49:01] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39108 - - [07/May/2019 13:29:30] "HTTP/1.1 GET /api/showlog/xiangxiang" - 200 OK
+127.0.0.1:39136 - - [07/May/2019 13:30:16] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39144 - - [07/May/2019 13:30:26] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:40044 - - [07/May/2019 13:43:30] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:40062 - - [07/May/2019 13:43:45] "HTTP/1.1 GET /api/showlog/xiangxiang" - 200 OK
+127.0.0.1:40176 - - [07/May/2019 13:46:00] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41226 - - [07/May/2019 14:10:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41232 - - [07/May/2019 14:10:30] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41238 - - [07/May/2019 14:10:34] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:41248 - - [07/May/2019 14:10:36] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41254 - - [07/May/2019 14:10:37] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:41260 - - [07/May/2019 14:10:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41268 - - [07/May/2019 14:10:45] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41274 - - [07/May/2019 14:10:55] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:41286 - - [07/May/2019 14:11:03] "HTTP/1.1 GET /api/showlog/xiangxiang" - 200 OK
+127.0.0.1:41466 - - [07/May/2019 14:17:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41486 - - [07/May/2019 14:18:04] "HTTP/1.1 GET /api/showlog/xiangxiang" - 200 OK
+127.0.0.1:41526 - - [07/May/2019 14:18:27] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:41532 - - [07/May/2019 14:18:28] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:41542 - - [07/May/2019 14:18:32] "HTTP/1.1 GET /api/count/env=shaoyang&time=day" - 200 OK
+127.0.0.1:41562 - - [07/May/2019 14:18:36] "HTTP/1.1 GET /api/count/env=hengyang&time=day" - 200 OK
+127.0.0.1:41574 - - [07/May/2019 14:18:37] "HTTP/1.1 GET /api/count/env=xiangxiang&time=day" - 200 OK
+127.0.0.1:41582 - - [07/May/2019 14:18:43] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:41588 - - [07/May/2019 14:18:44] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:41594 - - [07/May/2019 14:18:45] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:41600 - - [07/May/2019 14:18:48] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:41612 - - [07/May/2019 14:18:59] "HTTP/1.1 GET /api/waringinfo/xiangxiang" - 200 OK
+127.0.0.1:43072 - - [07/May/2019 14:41:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43614 - - [07/May/2019 15:04:33] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44192 - - [07/May/2019 15:27:47] "HTTP/1.1 GET /api/.env" - 404 Not Found
+127.0.0.1:44868 - - [07/May/2019 15:45:00] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44892 - - [07/May/2019 15:45:32] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45154 - - [07/May/2019 15:49:11] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:45166 - - [07/May/2019 15:49:23] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45174 - - [07/May/2019 15:49:38] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:45778 - - [07/May/2019 16:01:58] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:45978 - - [07/May/2019 16:10:54] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45984 - - [07/May/2019 16:10:57] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:46258 - - [07/May/2019 16:23:21] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46478 - - [07/May/2019 16:32:09] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46484 - - [07/May/2019 16:32:13] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:49300 - - [07/May/2019 17:59:28] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50562 - - [07/May/2019 18:34:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50950 - - [07/May/2019 18:48:31] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54324 - - [07/May/2019 21:01:32] "HTTP/1.1 GET /api/.env" - 404 Not Found
+127.0.0.1:34228 - - [08/May/2019 03:10:28] "HTTP/1.1 GET /api/.env" - 404 Not Found
+127.0.0.1:51836 - - [08/May/2019 13:13:34] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-08 13:13:40,465| ERROR   | Could not establish connection from ('127.0.0.1', 41205) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:51846 - - [08/May/2019 13:13:40] "HTTP/1.1 GET /api/showlog/guizhou" - 500 Internal Server Error
+127.0.0.1:38840 - - [08/May/2019 21:52:55] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60102 - - [09/May/2019 12:08:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60110 - - [09/May/2019 12:08:21] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:60254 - - [09/May/2019 12:11:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60262 - - [09/May/2019 12:11:33] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:33616 - - [09/May/2019 13:09:54] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33624 - - [09/May/2019 13:09:57] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:36866 - - [09/May/2019 15:07:45] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-09 15:07:50,118| ERROR   | Could not establish connection from ('127.0.0.1', 39988) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:36872 - - [09/May/2019 15:07:50] "HTTP/1.1 GET /api/showlog/guizhou" - 500 Internal Server Error
+127.0.0.1:36884 - - [09/May/2019 15:07:58] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:39536 - - [09/May/2019 16:25:50] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39606 - - [09/May/2019 16:28:48] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39612 - - [09/May/2019 16:28:51] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:41290 - - [09/May/2019 17:22:22] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59980 - - [10/May/2019 13:55:53] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59986 - - [10/May/2019 13:56:00] "HTTP/1.1 GET /api/showlog/leiyang" - 200 OK
+127.0.0.1:50788 - - [12/May/2019 09:29:39] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50820 - - [12/May/2019 09:29:47] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:35240 - - [14/May/2019 23:12:28] "HTTP/1.1 GET /api/.env" - 404 Not Found
+127.0.0.1:49474 - - [15/May/2019 06:46:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-15 06:46:34,234| ERROR   | Secsh channel 0 open FAILED: Connection refused: Connect failed
+2019-05-15 06:46:34,252| ERROR   | Could not establish connection from ('127.0.0.1', 33433) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:49482 - - [15/May/2019 06:46:34] "HTTP/1.1 GET /api/showlog/yongzhou" - 500 Internal Server Error
+127.0.0.1:49502 - - [15/May/2019 06:47:14] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:49598 - - [15/May/2019 06:49:04] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:49606 - - [15/May/2019 06:49:10] "HTTP/1.1 GET /api/waringinfo/jinzhong" - 200 OK
+127.0.0.1:38246 - - [15/May/2019 15:42:47] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38460 - - [15/May/2019 15:49:44] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38476 - - [15/May/2019 15:50:00] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:38482 - - [15/May/2019 15:50:03] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:38490 - - [15/May/2019 15:50:10] "HTTP/1.1 GET /api/count/env=yueyang&time=month" - 200 OK
+127.0.0.1:38508 - - [15/May/2019 15:50:48] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:38514 - - [15/May/2019 15:50:50] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:38522 - - [15/May/2019 15:50:59] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:38532 - - [15/May/2019 15:51:07] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:38540 - - [15/May/2019 15:51:11] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38546 - - [15/May/2019 15:51:12] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:38558 - - [15/May/2019 15:51:29] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:38564 - - [15/May/2019 15:51:38] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:38576 - - [15/May/2019 15:51:43] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:38592 - - [15/May/2019 15:51:53] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:38602 - - [15/May/2019 15:51:59] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:38614 - - [15/May/2019 15:52:14] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:38624 - - [15/May/2019 15:52:20] "HTTP/1.1 GET /api/showlog/yongzhou" - 200 OK
+127.0.0.1:38632 - - [15/May/2019 15:52:25] "HTTP/1.1 GET /api/showlog/hengyang" - 200 OK
+127.0.0.1:38638 - - [15/May/2019 15:52:29] "HTTP/1.1 GET /api/showlog/leiyang" - 200 OK
+127.0.0.1:38654 - - [15/May/2019 15:52:39] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:40454 - - [15/May/2019 16:54:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:42872 - - [16/May/2019 09:09:52] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:42904 - - [16/May/2019 09:11:00] "HTTP/1.1 GET /api/showlog/wangwang" - 200 OK
+127.0.0.1:42932 - - [16/May/2019 09:11:58] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:49382 - - [16/May/2019 11:41:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49430 - - [16/May/2019 11:42:34] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:49436 - - [16/May/2019 11:42:40] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:49448 - - [16/May/2019 11:42:54] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:55002 - - [16/May/2019 15:18:19] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55012 - - [16/May/2019 15:18:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55018 - - [16/May/2019 15:18:27] "HTTP/1.1 GET /api/showlog/hengyang" - 200 OK
+127.0.0.1:55024 - - [16/May/2019 15:18:29] "HTTP/1.1 GET /api/showlog/hengyang" - 200 OK
+127.0.0.1:55038 - - [16/May/2019 15:19:01] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:55050 - - [16/May/2019 15:19:02] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:55056 - - [16/May/2019 15:19:07] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:55062 - - [16/May/2019 15:19:10] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:55076 - - [16/May/2019 15:19:32] "HTTP/1.1 GET /api/waringinfo/hengyang" - 200 OK
+127.0.0.1:55570 - - [16/May/2019 15:36:42] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55594 - - [16/May/2019 15:37:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55600 - - [16/May/2019 15:37:29] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:55612 - - [16/May/2019 15:37:45] "HTTP/1.1 GET /api/showlog/hengyang" - 200 OK
+127.0.0.1:55658 - - [16/May/2019 15:39:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55668 - - [16/May/2019 15:39:45] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:55774 - - [16/May/2019 15:42:42] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35966 - - [20/May/2019 09:11:12] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35972 - - [20/May/2019 09:11:25] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:37074 - - [20/May/2019 09:21:20] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37088 - - [20/May/2019 09:21:24] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:46796 - - [20/May/2019 16:27:07] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35218 - - [21/May/2019 11:10:48] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-22 11:14:54,038| ERROR   | Could not connect to gateway 172.18.247.104:22 : 110
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 52, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1553, in __enter__
+    self.start()
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1295, in start
+    reason='Could not establish session to SSH gateway')
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1101, in _raise
+    raise exception(reason)
+BaseSSHTunnelForwarderError: Could not establish session to SSH gateway
+
+127.0.0.1:53442 - - [22/May/2019 11:14:54] "HTTP/1.1 GET /api/showlog/yueyang" - 500 Internal Server Error
+2019-05-22 11:14:58,646| ERROR   | Could not connect to gateway 172.18.247.104:22 : 110
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 52, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1553, in __enter__
+    self.start()
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1295, in start
+    reason='Could not establish session to SSH gateway')
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1101, in _raise
+    raise exception(reason)
+BaseSSHTunnelForwarderError: Could not establish session to SSH gateway
+
+127.0.0.1:53446 - - [22/May/2019 11:14:58] "HTTP/1.1 GET /api/showlog/yueyang" - 500 Internal Server Error
+2019-05-22 11:15:14,518| ERROR   | Could not connect to gateway 172.18.247.104:22 : 110
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 52, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1553, in __enter__
+    self.start()
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1295, in start
+    reason='Could not establish session to SSH gateway')
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1101, in _raise
+    raise exception(reason)
+BaseSSHTunnelForwarderError: Could not establish session to SSH gateway
+
+127.0.0.1:53456 - - [22/May/2019 11:15:14] "HTTP/1.1 GET /api/showlog/yueyang" - 500 Internal Server Error
+127.0.0.1:53790 - - [22/May/2019 11:17:13] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53796 - - [22/May/2019 11:17:23] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:53814 - - [22/May/2019 11:17:42] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+2019-05-22 11:17:49,598| ERROR   | Exception: Error reading SSH protocol banner
+2019-05-22 11:17:49,652| ERROR   | Traceback (most recent call last):
+2019-05-22 11:17:49,652| ERROR   |   File "/usr/lib/python2.7/site-packages/paramiko/transport.py", line 1782, in run
+2019-05-22 11:17:49,652| ERROR   |     self._check_banner()
+2019-05-22 11:17:49,652| ERROR   |   File "/usr/lib/python2.7/site-packages/paramiko/transport.py", line 1934, in _check_banner
+2019-05-22 11:17:49,652| ERROR   |     raise SSHException('Error reading SSH protocol banner' + str(e))
+2019-05-22 11:17:49,652| ERROR   | SSHException: Error reading SSH protocol banner
+2019-05-22 11:17:49,653| ERROR   | 
+2019-05-22 11:17:49,658| ERROR   | Could not connect to gateway 172.18.247.104:22165 : Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 52, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1553, in __enter__
+    self.start()
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1295, in start
+    reason='Could not establish session to SSH gateway')
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1101, in _raise
+    raise exception(reason)
+BaseSSHTunnelForwarderError: Could not establish session to SSH gateway
+
+127.0.0.1:53808 - - [22/May/2019 11:17:49] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:53826 - - [22/May/2019 11:17:58] "HTTP/1.1 GET /api/showlog/xiangxiang" - 200 OK
+127.0.0.1:53838 - - [22/May/2019 11:18:15] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53848 - - [22/May/2019 11:18:27] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:53882 - - [22/May/2019 11:18:48] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:53892 - - [22/May/2019 11:18:48] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:53958 - - [22/May/2019 11:18:55] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:54010 - - [22/May/2019 11:19:07] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:54024 - - [22/May/2019 11:19:08] "HTTP/1.1 GET /api/count/env=yueyang&time=month" - 200 OK
+127.0.0.1:45294 - - [23/May/2019 07:31:45] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45300 - - [23/May/2019 07:31:50] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:54384 - - [23/May/2019 09:36:14] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54398 - - [23/May/2019 09:36:33] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54410 - - [23/May/2019 09:36:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56606 - - [23/May/2019 10:36:16] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56612 - - [23/May/2019 10:36:20] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:57056 - - [23/May/2019 10:42:53] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39980 - - [23/May/2019 16:03:16] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39992 - - [23/May/2019 16:03:32] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:40006 - - [23/May/2019 16:03:49] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40026 - - [23/May/2019 16:04:32] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:40034 - - [23/May/2019 16:04:37] "HTTP/1.1 GET /api/excludelog/huaian" - 200 OK
+127.0.0.1:40040 - - [23/May/2019 16:04:42] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40052 - - [23/May/2019 16:04:57] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+2019-05-23 16:08:31,244| ERROR   | Could not establish connection from ('127.0.0.1', 37805) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:40136 - - [23/May/2019 16:08:31] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:40150 - - [23/May/2019 16:08:59] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+2019-05-23 16:09:04,003| ERROR   | Could not establish connection from ('127.0.0.1', 37978) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:40156 - - [23/May/2019 16:09:04] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:40180 - - [23/May/2019 16:09:37] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:40270 - - [23/May/2019 16:13:19] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:40292 - - [23/May/2019 16:13:42] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40298 - - [23/May/2019 16:13:42] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:40322 - - [23/May/2019 16:14:26] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:40332 - - [23/May/2019 16:14:31] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:40340 - - [23/May/2019 16:14:38] "HTTP/1.1 GET /api/showlog/yongzhou" - 200 OK
+127.0.0.1:40346 - - [23/May/2019 16:14:45] "HTTP/1.1 GET /api/showlog/leiyang" - 200 OK
+127.0.0.1:40366 - - [23/May/2019 16:15:27] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:40436 - - [23/May/2019 16:18:21] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:40464 - - [23/May/2019 16:18:30] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:40486 - - [23/May/2019 16:18:33] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:40498 - - [23/May/2019 16:18:37] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40524 - - [23/May/2019 16:19:37] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:40530 - - [23/May/2019 16:19:38] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:40648 - - [23/May/2019 16:21:45] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-23 16:21:52,900| ERROR   | Could not establish connection from ('127.0.0.1', 33599) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:40660 - - [23/May/2019 16:21:53] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:41394 - - [23/May/2019 16:39:45] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44744 - - [23/May/2019 17:52:15] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49538 - - [23/May/2019 20:48:12] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55888 - - [24/May/2019 00:55:01] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-24 00:56:16,645| ERROR   | Could not establish connection from ('127.0.0.1', 33579) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:55920 - - [24/May/2019 00:56:16] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:53136 - - [24/May/2019 14:20:47] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-24 14:20:54,180| ERROR   | Could not establish connection from ('127.0.0.1', 38316) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:53142 - - [24/May/2019 14:20:54] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:53154 - - [24/May/2019 14:20:59] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+2019-05-24 14:21:04,308| ERROR   | Could not establish connection from ('127.0.0.1', 46708) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:53160 - - [24/May/2019 14:21:04] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:53194 - - [24/May/2019 14:22:07] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53200 - - [24/May/2019 14:22:09] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:53208 - - [24/May/2019 14:22:12] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+2019-05-24 14:59:54,517| ERROR   | Could not establish connection from ('127.0.0.1', 36927) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:54398 - - [24/May/2019 14:59:54] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:56384 - - [24/May/2019 16:14:47] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:56392 - - [24/May/2019 16:14:55] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+2019-05-24 16:31:50,496| ERROR   | Could not establish connection from ('127.0.0.1', 46571) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:56776 - - [24/May/2019 16:31:50] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:56798 - - [24/May/2019 16:32:42] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56808 - - [24/May/2019 16:32:45] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:56828 - - [24/May/2019 16:33:35] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56836 - - [24/May/2019 16:33:39] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:57060 - - [24/May/2019 16:38:32] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+2019-05-24 16:38:34,978| ERROR   | Could not establish connection from ('127.0.0.1', 40492) to remote side of the tunnel
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 53, in executesql
+    conn = MySQLdb.connect(host='127.0.0.1', user=user, passwd=password, db=database, charset="utf8mb4",port=server.local_bind_port)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (2013, "Lost connection to MySQL server at 'reading initial communication packet', system error: 0")
+
+127.0.0.1:57066 - - [24/May/2019 16:38:35] "HTTP/1.1 GET /api/showlog/jinzhong" - 500 Internal Server Error
+127.0.0.1:57498 - - [24/May/2019 16:45:37] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57528 - - [24/May/2019 16:46:45] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:57540 - - [24/May/2019 16:46:55] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57546 - - [24/May/2019 16:46:58] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:57552 - - [24/May/2019 16:47:01] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:57614 - - [24/May/2019 16:49:35] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57622 - - [24/May/2019 16:49:40] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:57632 - - [24/May/2019 16:49:47] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:57676 - - [24/May/2019 16:51:33] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:57682 - - [24/May/2019 16:51:36] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:59770 - - [24/May/2019 18:12:19] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60548 - - [24/May/2019 18:30:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60554 - - [24/May/2019 18:30:44] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+2019-05-27 15:54:03,478| ERROR   | Could not connect to gateway 172.18.247.104:55128 : 110
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 52, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1553, in __enter__
+    self.start()
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1295, in start
+    reason='Could not establish session to SSH gateway')
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1101, in _raise
+    raise exception(reason)
+BaseSSHTunnelForwarderError: Could not establish session to SSH gateway
+
+127.0.0.1:60722 - - [27/May/2019 15:54:03] "HTTP/1.1 GET /api/showlog/yueyang" - 500 Internal Server Error
+127.0.0.1:60828 - - [27/May/2019 15:55:39] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60834 - - [27/May/2019 15:55:41] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+2019-05-27 15:55:56,566| ERROR   | Exception: Error reading SSH protocol banner
+2019-05-27 15:55:56,567| ERROR   | Traceback (most recent call last):
+2019-05-27 15:55:56,567| ERROR   |   File "/usr/lib/python2.7/site-packages/paramiko/transport.py", line 1782, in run
+2019-05-27 15:55:56,567| ERROR   |     self._check_banner()
+2019-05-27 15:55:56,567| ERROR   |   File "/usr/lib/python2.7/site-packages/paramiko/transport.py", line 1934, in _check_banner
+2019-05-27 15:55:56,567| ERROR   |     raise SSHException('Error reading SSH protocol banner' + str(e))
+2019-05-27 15:55:56,567| ERROR   | SSHException: Error reading SSH protocol banner
+2019-05-27 15:55:56,568| ERROR   | 
+2019-05-27 15:55:56,570| ERROR   | Could not connect to gateway 172.18.247.104:22172 : Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 52, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1553, in __enter__
+    self.start()
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1295, in start
+    reason='Could not establish session to SSH gateway')
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1101, in _raise
+    raise exception(reason)
+BaseSSHTunnelForwarderError: Could not establish session to SSH gateway
+
+127.0.0.1:60846 - - [27/May/2019 15:55:56] "HTTP/1.1 GET /api/showlog/huaian" - 500 Internal Server Error
+2019-05-27 15:56:03,827| ERROR   | Exception: Error reading SSH protocol banner
+2019-05-27 15:56:03,828| ERROR   | Traceback (most recent call last):
+2019-05-27 15:56:03,828| ERROR   |   File "/usr/lib/python2.7/site-packages/paramiko/transport.py", line 1782, in run
+2019-05-27 15:56:03,828| ERROR   |     self._check_banner()
+2019-05-27 15:56:03,828| ERROR   |   File "/usr/lib/python2.7/site-packages/paramiko/transport.py", line 1934, in _check_banner
+2019-05-27 15:56:03,828| ERROR   |     raise SSHException('Error reading SSH protocol banner' + str(e))
+2019-05-27 15:56:03,828| ERROR   | SSHException: Error reading SSH protocol banner
+2019-05-27 15:56:03,828| ERROR   | 
+2019-05-27 15:56:03,831| ERROR   | Could not connect to gateway 172.18.247.104:22169 : Error reading SSH protocol banner
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/usr/local/script/moniter/showwebnew.py", line 145, in GET
+    data=executesql(sql,area,'GET')
+  File "/usr/local/script/moniter/showwebnew.py", line 52, in executesql
+    with SSHTunnelForwarder(ssh_address_or_host=(conf.proxyhost, port),ssh_pkey=private_key,ssh_username='jtcf',remote_bind_address=(host, 3306)) as server:
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1553, in __enter__
+    self.start()
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1295, in start
+    reason='Could not establish session to SSH gateway')
+  File "/usr/lib/python2.7/site-packages/sshtunnel.py", line 1101, in _raise
+    raise exception(reason)
+BaseSSHTunnelForwarderError: Could not establish session to SSH gateway
+
+127.0.0.1:60850 - - [27/May/2019 15:56:03] "HTTP/1.1 GET /api/showlog/xuzhou" - 500 Internal Server Error
+127.0.0.1:47666 - - [27/May/2019 19:02:33] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47674 - - [27/May/2019 19:02:35] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:47724 - - [27/May/2019 19:04:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47734 - - [27/May/2019 19:04:43] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:47784 - - [27/May/2019 19:06:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47794 - - [27/May/2019 19:07:00] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:47854 - - [27/May/2019 19:09:39] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47864 - - [27/May/2019 19:09:42] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:44132 - - [28/May/2019 10:16:57] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44144 - - [28/May/2019 10:17:04] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:44150 - - [28/May/2019 10:17:13] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:44412 - - [28/May/2019 10:28:30] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45730 - - [28/May/2019 11:01:43] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45880 - - [28/May/2019 11:08:09] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:45886 - - [28/May/2019 11:08:11] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:45894 - - [28/May/2019 11:08:22] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:46186 - - [28/May/2019 11:20:19] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33198 - - [30/May/2019 06:37:44] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33210 - - [30/May/2019 06:37:57] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:33222 - - [30/May/2019 06:38:17] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:33228 - - [30/May/2019 06:38:19] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:33236 - - [30/May/2019 06:38:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33242 - - [30/May/2019 06:38:33] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:33254 - - [30/May/2019 06:38:52] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:33266 - - [30/May/2019 06:39:05] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37294 - - [30/May/2019 09:08:00] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:37500 - - [30/May/2019 09:16:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37510 - - [30/May/2019 09:16:47] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37936 - - [30/May/2019 09:35:40] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:41536 - - [30/May/2019 11:31:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41998 - - [30/May/2019 11:42:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:42004 - - [30/May/2019 11:42:30] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:42012 - - [30/May/2019 11:42:33] "HTTP/1.1 GET /api/waringinfo/field" - 200 OK
+127.0.0.1:42152 - - [30/May/2019 11:48:54] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45586 - - [30/May/2019 13:54:03] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:46678 - - [30/May/2019 14:15:09] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46686 - - [30/May/2019 14:15:18] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:47220 - - [31/May/2019 06:19:49] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54020 - - [31/May/2019 08:44:13] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54026 - - [31/May/2019 08:44:17] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:54116 - - [31/May/2019 08:47:53] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54140 - - [31/May/2019 08:48:52] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:34126 - - [31/May/2019 11:12:35] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:34158 - - [31/May/2019 11:12:49] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:37040 - - [31/May/2019 11:32:42] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37062 - - [31/May/2019 11:32:49] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:38952 - - [31/May/2019 11:51:23] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39468 - - [31/May/2019 11:56:49] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:44722 - - [31/May/2019 13:50:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44728 - - [31/May/2019 13:50:11] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:48210 - - [31/May/2019 15:53:20] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48222 - - [31/May/2019 15:53:36] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:56612 - - [01/Jun/2019 09:15:51] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56758 - - [01/Jun/2019 09:22:11] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58478 - - [01/Jun/2019 10:10:11] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38980 - - [02/Jun/2019 08:08:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40396 - - [02/Jun/2019 09:02:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40424 - - [02/Jun/2019 09:03:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40456 - - [02/Jun/2019 09:04:41] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40494 - - [02/Jun/2019 09:06:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40778 - - [02/Jun/2019 09:18:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52752 - - [03/Jun/2019 10:47:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52758 - - [03/Jun/2019 10:47:25] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52764 - - [03/Jun/2019 10:47:26] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:52770 - - [03/Jun/2019 10:47:27] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:52776 - - [03/Jun/2019 10:47:29] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:52782 - - [03/Jun/2019 10:47:32] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:52794 - - [03/Jun/2019 10:47:37] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:52800 - - [03/Jun/2019 10:47:46] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52806 - - [03/Jun/2019 10:47:50] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:54404 - - [03/Jun/2019 11:28:30] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54410 - - [03/Jun/2019 11:28:33] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:44948 - - [04/Jun/2019 11:02:16] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46204 - - [04/Jun/2019 11:44:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46218 - - [04/Jun/2019 11:44:39] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46224 - - [04/Jun/2019 11:44:46] "HTTP/1.1 GET /api/showlog/hengyang" - 200 OK
+127.0.0.1:46254 - - [04/Jun/2019 11:45:48] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:46262 - - [04/Jun/2019 11:45:48] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:46268 - - [04/Jun/2019 11:45:56] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:53122 - - [04/Jun/2019 14:56:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53130 - - [04/Jun/2019 14:56:21] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:59000 - - [04/Jun/2019 17:51:15] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59018 - - [04/Jun/2019 17:51:47] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:59074 - - [04/Jun/2019 17:53:58] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:59086 - - [04/Jun/2019 17:54:14] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:60512 - - [04/Jun/2019 18:49:03] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:60582 - - [04/Jun/2019 18:51:59] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:60588 - - [04/Jun/2019 18:52:01] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:60600 - - [04/Jun/2019 18:52:11] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:60608 - - [04/Jun/2019 18:52:14] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60644 - - [04/Jun/2019 18:53:33] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55186 - - [05/Jun/2019 09:18:53] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55192 - - [05/Jun/2019 09:18:56] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:35700 - - [05/Jun/2019 14:07:20] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35710 - - [05/Jun/2019 14:07:24] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:41956 - - [09/Jun/2019 16:54:28] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41968 - - [09/Jun/2019 16:54:44] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40648 - - [10/Jun/2019 10:18:34] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40656 - - [10/Jun/2019 10:18:37] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:43076 - - [10/Jun/2019 11:39:01] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48670 - - [10/Jun/2019 15:03:35] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52838 - - [10/Jun/2019 17:29:12] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53090 - - [10/Jun/2019 17:32:41] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54098 - - [10/Jun/2019 17:48:09] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54148 - - [10/Jun/2019 17:50:07] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54158 - - [10/Jun/2019 17:50:10] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:54164 - - [10/Jun/2019 17:50:13] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:54172 - - [10/Jun/2019 17:50:27] "HTTP/1.1 GET /api/insertexcludelog/info=Error: read ECONNRESET&env=yueyang" - 200 OK
+127.0.0.1:54234 - - [10/Jun/2019 17:50:27] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:54246 - - [10/Jun/2019 17:50:37] "HTTP/1.1 GET /api/delexclog/id=34&env=yueyang" - 200 OK
+127.0.0.1:54252 - - [10/Jun/2019 17:50:38] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:54258 - - [10/Jun/2019 17:50:44] "HTTP/1.1 GET /api/excludelog/guizhou" - 200 OK
+127.0.0.1:54266 - - [10/Jun/2019 17:50:48] "HTTP/1.1 GET /api/excludelog/field" - 200 OK
+127.0.0.1:54276 - - [10/Jun/2019 17:50:54] "HTTP/1.1 GET /api/delexclog/id=10&env=field" - 200 OK
+127.0.0.1:54282 - - [10/Jun/2019 17:50:54] "HTTP/1.1 GET /api/excludelog/field" - 200 OK
+127.0.0.1:54290 - - [10/Jun/2019 17:51:01] "HTTP/1.1 GET /api/excludelog/wangwang" - 200 OK
+127.0.0.1:55484 - - [10/Jun/2019 18:08:10] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55076 - - [11/Jun/2019 07:30:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55096 - - [11/Jun/2019 07:30:20] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:55436 - - [11/Jun/2019 07:34:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55448 - - [11/Jun/2019 07:34:26] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:55546 - - [11/Jun/2019 07:35:36] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:36470 - - [11/Jun/2019 09:26:21] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:36476 - - [11/Jun/2019 09:26:24] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:37592 - - [11/Jun/2019 10:03:43] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38276 - - [11/Jun/2019 10:33:24] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:38898 - - [11/Jun/2019 10:49:53] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48034 - - [11/Jun/2019 14:06:57] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48054 - - [11/Jun/2019 14:07:11] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:48656 - - [11/Jun/2019 14:15:35] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50078 - - [11/Jun/2019 14:54:05] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50084 - - [11/Jun/2019 14:54:08] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:53236 - - [11/Jun/2019 16:31:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53242 - - [11/Jun/2019 16:31:20] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:56948 - - [11/Jun/2019 18:24:20] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53388 - - [12/Jun/2019 09:10:34] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53394 - - [12/Jun/2019 09:10:43] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:53700 - - [12/Jun/2019 09:23:31] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53706 - - [12/Jun/2019 09:23:34] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:57760 - - [13/Jun/2019 10:30:47] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57770 - - [13/Jun/2019 10:30:53] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:59222 - - [13/Jun/2019 11:10:29] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59234 - - [13/Jun/2019 11:10:37] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:59248 - - [13/Jun/2019 11:11:04] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59258 - - [13/Jun/2019 11:11:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59266 - - [13/Jun/2019 11:11:24] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:59586 - - [13/Jun/2019 11:24:02] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59592 - - [13/Jun/2019 11:24:03] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:33352 - - [13/Jun/2019 12:02:37] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33360 - - [13/Jun/2019 12:02:42] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:35580 - - [13/Jun/2019 12:27:48] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35586 - - [13/Jun/2019 12:27:50] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:36044 - - [13/Jun/2019 12:34:29] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:36050 - - [13/Jun/2019 12:34:33] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:40288 - - [13/Jun/2019 14:54:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40298 - - [13/Jun/2019 14:54:27] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:40336 - - [13/Jun/2019 14:56:01] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40348 - - [13/Jun/2019 14:56:24] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:47286 - - [13/Jun/2019 16:24:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47292 - - [13/Jun/2019 16:24:29] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:47596 - - [13/Jun/2019 16:30:32] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47614 - - [13/Jun/2019 16:31:01] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:48738 - - [13/Jun/2019 16:51:07] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49176 - - [13/Jun/2019 17:01:43] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49560 - - [13/Jun/2019 17:16:35] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49572 - - [13/Jun/2019 17:16:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49604 - - [13/Jun/2019 17:17:49] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:49630 - - [13/Jun/2019 17:18:41] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49644 - - [13/Jun/2019 17:19:04] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:49652 - - [13/Jun/2019 17:19:14] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49662 - - [13/Jun/2019 17:19:17] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:49728 - - [13/Jun/2019 17:22:11] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:49846 - - [13/Jun/2019 17:26:46] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:49852 - - [13/Jun/2019 17:26:52] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:49886 - - [13/Jun/2019 17:28:14] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49892 - - [13/Jun/2019 17:28:15] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:49902 - - [13/Jun/2019 17:28:17] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:49908 - - [13/Jun/2019 17:28:18] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:49914 - - [13/Jun/2019 17:28:20] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:49922 - - [13/Jun/2019 17:28:24] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:49928 - - [13/Jun/2019 17:28:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49950 - - [13/Jun/2019 17:29:06] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:49956 - - [13/Jun/2019 17:29:08] "HTTP/1.1 GET /api/count/env=yueyang&time=week" - 200 OK
+127.0.0.1:49964 - - [13/Jun/2019 17:29:10] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:50230 - - [13/Jun/2019 17:37:01] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50236 - - [13/Jun/2019 17:37:05] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:50646 - - [13/Jun/2019 17:42:44] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50652 - - [13/Jun/2019 17:42:48] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:51100 - - [13/Jun/2019 17:54:29] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51106 - - [13/Jun/2019 17:54:32] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:51112 - - [13/Jun/2019 17:54:35] "HTTP/1.1 GET /api/waringinfo/shaoyang" - 200 OK
+127.0.0.1:51582 - - [13/Jun/2019 18:10:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51590 - - [13/Jun/2019 18:10:29] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:52398 - - [13/Jun/2019 18:35:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54914 - - [14/Jun/2019 09:13:22] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54920 - - [14/Jun/2019 09:13:27] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:55172 - - [14/Jun/2019 09:24:46] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:55178 - - [14/Jun/2019 09:24:51] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:55186 - - [14/Jun/2019 09:24:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55292 - - [14/Jun/2019 09:29:41] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:55302 - - [14/Jun/2019 09:29:44] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:35012 - - [14/Jun/2019 11:41:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35018 - - [14/Jun/2019 11:41:12] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:38462 - - [14/Jun/2019 13:50:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38470 - - [14/Jun/2019 13:50:36] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:38476 - - [14/Jun/2019 13:50:36] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:38482 - - [14/Jun/2019 13:50:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38494 - - [14/Jun/2019 13:51:02] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38508 - - [14/Jun/2019 13:51:16] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:38536 - - [14/Jun/2019 13:52:13] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38542 - - [14/Jun/2019 13:52:16] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:38972 - - [14/Jun/2019 13:57:34] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:38986 - - [14/Jun/2019 13:57:59] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38998 - - [14/Jun/2019 13:58:12] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39154 - - [14/Jun/2019 14:00:42] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:39174 - - [14/Jun/2019 14:01:11] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:39210 - - [14/Jun/2019 14:02:36] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:39224 - - [14/Jun/2019 14:02:50] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39234 - - [14/Jun/2019 14:02:59] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:39280 - - [14/Jun/2019 14:04:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39520 - - [14/Jun/2019 14:07:33] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39546 - - [14/Jun/2019 14:08:29] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:39596 - - [14/Jun/2019 14:10:28] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:39604 - - [14/Jun/2019 14:10:43] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39614 - - [14/Jun/2019 14:10:46] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:39622 - - [14/Jun/2019 14:11:02] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:39966 - - [14/Jun/2019 14:24:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39984 - - [14/Jun/2019 14:25:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39990 - - [14/Jun/2019 14:25:12] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:40002 - - [14/Jun/2019 14:25:28] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:41262 - - [14/Jun/2019 14:43:05] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:42364 - - [14/Jun/2019 15:01:16] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:42376 - - [14/Jun/2019 15:01:19] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:50622 - - [14/Jun/2019 17:31:30] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50810 - - [15/Jun/2019 09:20:24] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50820 - - [15/Jun/2019 09:20:26] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:51736 - - [15/Jun/2019 09:51:34] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51748 - - [15/Jun/2019 09:51:51] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51804 - - [15/Jun/2019 09:53:57] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52580 - - [15/Jun/2019 10:11:44] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52646 - - [15/Jun/2019 10:13:45] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:52658 - - [15/Jun/2019 10:13:53] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54188 - - [15/Jun/2019 10:51:32] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54196 - - [15/Jun/2019 10:51:39] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54202 - - [15/Jun/2019 10:51:43] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56056 - - [15/Jun/2019 11:53:25] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56076 - - [15/Jun/2019 11:54:05] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:56088 - - [15/Jun/2019 11:54:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57064 - - [15/Jun/2019 12:36:30] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45050 - - [15/Jun/2019 20:57:44] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45056 - - [15/Jun/2019 20:57:46] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:46856 - - [18/Jun/2019 09:51:13] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46862 - - [18/Jun/2019 09:51:16] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:49114 - - [18/Jun/2019 11:20:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49120 - - [18/Jun/2019 11:21:03] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:49126 - - [18/Jun/2019 11:21:09] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:49138 - - [18/Jun/2019 11:21:23] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:49146 - - [18/Jun/2019 11:21:26] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:49160 - - [18/Jun/2019 11:21:41] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50270 - - [18/Jun/2019 11:43:16] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:50370 - - [18/Jun/2019 11:44:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:50420 - - [18/Jun/2019 11:44:58] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:54324 - - [18/Jun/2019 13:43:37] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:54332 - - [18/Jun/2019 13:43:42] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:56926 - - [18/Jun/2019 14:41:49] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57016 - - [18/Jun/2019 14:45:42] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57472 - - [18/Jun/2019 15:06:05] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33094 - - [18/Jun/2019 17:02:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33126 - - [18/Jun/2019 17:03:09] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:33132 - - [18/Jun/2019 17:03:10] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:33140 - - [18/Jun/2019 17:03:16] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:33152 - - [18/Jun/2019 17:03:22] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33160 - - [18/Jun/2019 17:03:30] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33166 - - [18/Jun/2019 17:03:32] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:33258 - - [18/Jun/2019 17:07:37] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:33304 - - [18/Jun/2019 17:09:22] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37570 - - [18/Jun/2019 18:24:03] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37618 - - [18/Jun/2019 18:25:54] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39160 - - [18/Jun/2019 18:46:02] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:36518 - - [19/Jun/2019 09:17:28] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:36572 - - [19/Jun/2019 09:19:44] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:36584 - - [19/Jun/2019 09:19:56] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:36598 - - [19/Jun/2019 09:20:12] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:36888 - - [19/Jun/2019 09:23:08] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:36902 - - [19/Jun/2019 09:23:10] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:40572 - - [19/Jun/2019 11:09:41] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:40580 - - [19/Jun/2019 11:09:44] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40586 - - [19/Jun/2019 11:09:46] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:40604 - - [19/Jun/2019 11:10:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40612 - - [19/Jun/2019 11:10:28] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:40630 - - [19/Jun/2019 11:11:00] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40640 - - [19/Jun/2019 11:11:12] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40650 - - [19/Jun/2019 11:11:17] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:40658 - - [19/Jun/2019 11:11:33] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40706 - - [19/Jun/2019 11:12:36] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40744 - - [19/Jun/2019 11:13:26] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:40758 - - [19/Jun/2019 11:13:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40766 - - [19/Jun/2019 11:13:49] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40772 - - [19/Jun/2019 11:13:51] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:40778 - - [19/Jun/2019 11:13:57] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:40790 - - [19/Jun/2019 11:14:03] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:40796 - - [19/Jun/2019 11:14:05] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:40804 - - [19/Jun/2019 11:14:12] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:40812 - - [19/Jun/2019 11:14:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40920 - - [19/Jun/2019 11:19:10] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43930 - - [19/Jun/2019 13:01:39] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43936 - - [19/Jun/2019 13:01:42] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:44212 - - [19/Jun/2019 13:12:59] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:44702 - - [19/Jun/2019 13:34:15] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44716 - - [19/Jun/2019 13:34:42] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:44734 - - [19/Jun/2019 13:35:10] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:45188 - - [19/Jun/2019 13:43:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45194 - - [19/Jun/2019 13:43:25] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45202 - - [19/Jun/2019 13:43:26] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:45210 - - [19/Jun/2019 13:43:28] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:45220 - - [19/Jun/2019 13:43:29] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:45818 - - [19/Jun/2019 14:10:06] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45824 - - [19/Jun/2019 14:10:09] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:57732 - - [19/Jun/2019 21:33:33] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52278 - - [20/Jun/2019 09:43:05] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58180 - - [20/Jun/2019 11:44:32] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58188 - - [20/Jun/2019 11:44:35] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:34452 - - [20/Jun/2019 14:31:46] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35006 - - [20/Jun/2019 14:47:07] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35012 - - [20/Jun/2019 14:47:11] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:35022 - - [20/Jun/2019 14:47:17] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:35030 - - [20/Jun/2019 14:47:30] "HTTP/1.1 GET /api/excludelog/yueyang" - 200 OK
+127.0.0.1:35036 - - [20/Jun/2019 14:47:32] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:35236 - - [20/Jun/2019 14:56:20] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:35254 - - [20/Jun/2019 14:56:54] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:38728 - - [20/Jun/2019 17:05:11] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40392 - - [20/Jun/2019 18:09:41] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45576 - - [20/Jun/2019 21:19:54] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43150 - - [21/Jun/2019 10:40:20] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43156 - - [21/Jun/2019 10:40:25] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:43352 - - [21/Jun/2019 10:49:19] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43506 - - [21/Jun/2019 10:55:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43766 - - [21/Jun/2019 11:06:43] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43774 - - [21/Jun/2019 11:06:57] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:43786 - - [21/Jun/2019 11:07:20] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45074 - - [21/Jun/2019 11:55:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48236 - - [21/Jun/2019 13:51:28] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48248 - - [21/Jun/2019 13:51:43] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:48260 - - [21/Jun/2019 13:52:02] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:48934 - - [21/Jun/2019 14:21:32] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:49170 - - [21/Jun/2019 14:31:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58206 - - [21/Jun/2019 18:36:11] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58772 - - [21/Jun/2019 18:52:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58778 - - [21/Jun/2019 18:52:32] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51560 - - [24/Jun/2019 10:46:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51570 - - [24/Jun/2019 10:46:43] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:36286 - - [25/Jun/2019 09:24:41] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:36292 - - [25/Jun/2019 09:24:46] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:39458 - - [25/Jun/2019 11:03:11] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39468 - - [25/Jun/2019 11:03:16] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:39612 - - [25/Jun/2019 11:09:25] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39626 - - [25/Jun/2019 11:09:46] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:40630 - - [25/Jun/2019 11:43:16] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:40824 - - [25/Jun/2019 11:51:08] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:43152 - - [25/Jun/2019 13:24:11] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:58346 - - [25/Jun/2019 21:43:28] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45350 - - [26/Jun/2019 06:35:34] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45358 - - [26/Jun/2019 06:35:44] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:45384 - - [26/Jun/2019 06:36:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45394 - - [26/Jun/2019 06:36:49] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:45452 - - [26/Jun/2019 06:39:10] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45458 - - [26/Jun/2019 06:39:15] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:45826 - - [26/Jun/2019 06:46:23] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:45834 - - [26/Jun/2019 06:46:28] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:46972 - - [26/Jun/2019 07:34:29] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46980 - - [26/Jun/2019 07:34:33] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:51742 - - [26/Jun/2019 10:14:49] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51748 - - [26/Jun/2019 10:14:54] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:52160 - - [26/Jun/2019 10:27:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52168 - - [26/Jun/2019 10:27:38] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:52492 - - [26/Jun/2019 10:30:40] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:52498 - - [26/Jun/2019 10:30:45] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:37326 - - [26/Jun/2019 15:42:04] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:37946 - - [26/Jun/2019 15:55:51] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:38000 - - [26/Jun/2019 15:58:09] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:38016 - - [26/Jun/2019 15:58:37] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:38022 - - [26/Jun/2019 15:58:43] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:38630 - - [26/Jun/2019 16:25:35] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39354 - - [26/Jun/2019 16:48:59] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39368 - - [26/Jun/2019 16:49:26] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39374 - - [26/Jun/2019 16:49:28] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39384 - - [26/Jun/2019 16:49:37] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:39392 - - [26/Jun/2019 16:49:44] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:39398 - - [26/Jun/2019 16:49:47] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41272 - - [26/Jun/2019 17:50:03] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41278 - - [26/Jun/2019 17:50:05] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:41394 - - [26/Jun/2019 17:54:58] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41402 - - [26/Jun/2019 17:55:01] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:41480 - - [26/Jun/2019 17:58:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41488 - - [26/Jun/2019 17:58:31] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:54336 - - [27/Jun/2019 01:33:56] "HTTP/1.1 GET /api/v1" - 404 Not Found
+127.0.0.1:42160 - - [27/Jun/2019 10:19:31] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48010 - - [27/Jun/2019 11:54:11] "HTTP/1.1 GET /api/v1" - 404 Not Found
+127.0.0.1:51118 - - [27/Jun/2019 13:55:39] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51130 - - [27/Jun/2019 13:55:43] "HTTP/1.1 GET /api/showlog/field" - 200 OK
+127.0.0.1:52082 - - [27/Jun/2019 14:31:19] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:52094 - - [27/Jun/2019 14:31:34] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60754 - - [27/Jun/2019 19:03:07] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:60818 - - [27/Jun/2019 19:05:39] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60826 - - [27/Jun/2019 19:05:43] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:60874 - - [27/Jun/2019 19:07:27] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:60880 - - [27/Jun/2019 19:07:30] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:33128 - - [27/Jun/2019 19:28:56] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33136 - - [27/Jun/2019 19:29:01] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:33240 - - [28/Jun/2019 09:01:28] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:33632 - - [28/Jun/2019 09:18:38] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:33864 - - [28/Jun/2019 09:28:54] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:36250 - - [28/Jun/2019 10:55:39] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:36282 - - [28/Jun/2019 10:56:47] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:40986 - - [28/Jun/2019 13:55:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:41016 - - [28/Jun/2019 13:56:35] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:46100 - - [28/Jun/2019 15:55:17] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:46448 - - [28/Jun/2019 16:10:05] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:47764 - - [28/Jun/2019 16:54:37] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53430 - - [28/Jun/2019 19:55:56] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53436 - - [28/Jun/2019 19:56:00] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:53512 - - [28/Jun/2019 19:59:09] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:53518 - - [28/Jun/2019 19:59:15] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:57772 - - [30/Jun/2019 10:09:18] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57858 - - [30/Jun/2019 10:13:04] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:57868 - - [30/Jun/2019 10:13:10] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:58018 - - [30/Jun/2019 10:19:22] "HTTP/1.1 GET /api/showlog/shaoyang" - 200 OK
+127.0.0.1:58032 - - [30/Jun/2019 10:19:35] "HTTP/1.1 GET /api/showlog/guizhou" - 200 OK
+127.0.0.1:59354 - - [30/Jun/2019 11:09:28] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59368 - - [30/Jun/2019 11:09:38] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59380 - - [30/Jun/2019 11:10:01] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59478 - - [30/Jun/2019 11:13:51] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48782 - - [02/Jul/2019 10:44:14] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48790 - - [02/Jul/2019 10:44:18] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:48836 - - [02/Jul/2019 10:45:44] "HTTP/1.1 GET /api/waringinfo/yueyang" - 200 OK
+127.0.0.1:48860 - - [02/Jul/2019 10:46:36] "HTTP/1.1 GET /api/waringinfo/jinzhong" - 200 OK
+127.0.0.1:48910 - - [02/Jul/2019 10:48:30] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:48918 - - [02/Jul/2019 10:48:33] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:48930 - - [02/Jul/2019 10:48:56] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:51132 - - [02/Jul/2019 11:32:52] "HTTP/1.1 GET /api/count/env=yueyang&time=day" - 200 OK
+127.0.0.1:51138 - - [02/Jul/2019 11:32:54] "HTTP/1.1 GET /api/showlog/yueyang" - 200 OK
+127.0.0.1:59350 - - [02/Jul/2019 18:09:59] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:59986 - - [02/Jul/2019 18:10:52] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:60142 - - [02/Jul/2019 18:11:03] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:44002 - - [02/Jul/2019 18:41:05] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:44110 - - [02/Jul/2019 18:41:24] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:44182 - - [02/Jul/2019 18:41:26] "HTTP/1.1 GET /api/count/env=jinzhong&time=day" - 200 OK
+127.0.0.1:44252 - - [02/Jul/2019 18:41:28] "HTTP/1.1 GET /api/waringinfo/jinzhong" - 200 OK
+127.0.0.1:44268 - - [02/Jul/2019 18:41:29] "HTTP/1.1 GET /api/excludelog/jinzhong" - 200 OK
+127.0.0.1:44280 - - [02/Jul/2019 18:41:31] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:59802 - - [03/Jul/2019 10:19:20] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:32828 - - [03/Jul/2019 10:24:59] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:32842 - - [03/Jul/2019 10:25:04] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:34336 - - [03/Jul/2019 10:32:16] "HTTP/1.1 GET /api/waringinfo/jinzhong" - 200 OK
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/data/shell/moniter/showwebnew.py", line 52, in GET
+    content = {'num':result[0],'hostname':str(result[1]),'error_log':str(result[2])}
+UnicodeEncodeError: 'ascii' codec can't encode character u'\ufffd' in position 30: ordinal not in range(128)
+
+127.0.0.1:34364 - - [03/Jul/2019 10:32:24] "HTTP/1.1 GET /api/count/env=jinzhong&time=day" - 500 Internal Server Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/data/shell/moniter/showwebnew.py", line 52, in GET
+    content = {'num':result[0],'hostname':str(result[1]),'error_log':str(result[2])}
+UnicodeEncodeError: 'ascii' codec can't encode character u'\ufffd' in position 30: ordinal not in range(128)
+
+127.0.0.1:34372 - - [03/Jul/2019 10:32:29] "HTTP/1.1 GET /api/count/env=jinzhong&time=day" - 500 Internal Server Error
+127.0.0.1:34388 - - [03/Jul/2019 10:32:34] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:34428 - - [03/Jul/2019 10:33:06] "HTTP/1.1 GET /api/waringinfo/jinzhong" - 200 OK
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/lib/python2.7/site-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/data/shell/moniter/showwebnew.py", line 52, in GET
+    content = {'num':result[0],'hostname':str(result[1]),'error_log':str(result[2])}
+UnicodeEncodeError: 'ascii' codec can't encode character u'\ufffd' in position 30: ordinal not in range(128)
+
+127.0.0.1:34436 - - [03/Jul/2019 10:33:09] "HTTP/1.1 GET /api/count/env=jinzhong&time=day" - 500 Internal Server Error
+127.0.0.1:35312 - - [03/Jul/2019 10:38:00] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:35412 - - [03/Jul/2019 10:38:32] "HTTP/1.1 GET /api/waringinfo/jinzhong" - 200 OK
+127.0.0.1:35418 - - [03/Jul/2019 10:38:34] "HTTP/1.1 GET /api/excludelog/jinzhong" - 200 OK
+127.0.0.1:36456 - - [03/Jul/2019 10:44:15] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:36474 - - [03/Jul/2019 10:44:20] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:36584 - - [03/Jul/2019 10:44:42] "HTTP/1.1 GET /api/showlog/jinzhong" - 200 OK
+127.0.0.1:42298 - - [03/Jul/2019 14:49:50] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:42302 - - [03/Jul/2019 14:49:51] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:42308 - - [03/Jul/2019 14:49:52] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:42312 - - [03/Jul/2019 14:49:54] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:42316 - - [03/Jul/2019 14:49:56] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:42322 - - [03/Jul/2019 14:49:57] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:42326 - - [03/Jul/2019 14:49:59] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:42332 - - [03/Jul/2019 14:50:00] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:44218 - - [03/Jul/2019 15:16:30] "HTTP/1.1 GET /api/count/env=haian&time=day" - 200 OK
+127.0.0.1:44226 - - [03/Jul/2019 15:16:34] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:44230 - - [03/Jul/2019 15:16:34] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:44244 - - [03/Jul/2019 15:16:36] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:44248 - - [03/Jul/2019 15:16:37] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:44254 - - [03/Jul/2019 15:16:38] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:44258 - - [03/Jul/2019 15:16:38] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:44262 - - [03/Jul/2019 15:16:39] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:45070 - - [03/Jul/2019 15:27:39] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:45088 - - [03/Jul/2019 15:27:44] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:45094 - - [03/Jul/2019 15:27:47] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:45108 - - [03/Jul/2019 15:27:54] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:45144 - - [03/Jul/2019 15:28:16] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:45152 - - [03/Jul/2019 15:28:19] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:45156 - - [03/Jul/2019 15:28:20] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:45164 - - [03/Jul/2019 15:28:22] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:45184 - - [03/Jul/2019 15:28:26] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:45190 - - [03/Jul/2019 15:28:29] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:45212 - - [03/Jul/2019 15:28:35] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:45222 - - [03/Jul/2019 15:28:36] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:45288 - - [03/Jul/2019 15:29:32] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:45294 - - [03/Jul/2019 15:29:34] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:45304 - - [03/Jul/2019 15:29:35] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:46906 - - [03/Jul/2019 15:52:54] "HTTP/1.1 GET /api/count/env=haian&time=day" - 200 OK
+127.0.0.1:46912 - - [03/Jul/2019 15:52:56] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:46916 - - [03/Jul/2019 15:52:57] "HTTP/1.1 GET /api/count/env=xuzhou&time=day" - 200 OK
+127.0.0.1:46920 - - [03/Jul/2019 15:52:59] "HTTP/1.1 GET /api/count/env=nantong&time=day" - 200 OK
+127.0.0.1:46926 - - [03/Jul/2019 15:53:00] "HTTP/1.1 GET /api/count/env=huaian&time=day" - 200 OK
+127.0.0.1:46952 - - [03/Jul/2019 15:53:09] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:46956 - - [03/Jul/2019 15:53:10] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:46964 - - [03/Jul/2019 15:53:13] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:46968 - - [03/Jul/2019 15:53:14] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:46972 - - [03/Jul/2019 15:53:15] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:46978 - - [03/Jul/2019 15:53:16] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:47392 - - [03/Jul/2019 15:59:32] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:47400 - - [03/Jul/2019 15:59:33] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47404 - - [03/Jul/2019 15:59:35] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:47420 - - [03/Jul/2019 15:59:36] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:47424 - - [03/Jul/2019 15:59:37] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:47428 - - [03/Jul/2019 15:59:40] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:47434 - - [03/Jul/2019 15:59:41] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47438 - - [03/Jul/2019 15:59:43] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:47444 - - [03/Jul/2019 15:59:47] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:47452 - - [03/Jul/2019 15:59:48] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:47456 - - [03/Jul/2019 15:59:50] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:47562 - - [03/Jul/2019 16:01:15] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:47576 - - [03/Jul/2019 16:01:24] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47580 - - [03/Jul/2019 16:01:28] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:47638 - - [03/Jul/2019 16:02:10] "HTTP/1.1 GET /api/insertexcludelog/info=Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'tb_user_game.leagueId = 0' at line 1&env=js3mj" - 200 OK
+127.0.0.1:47644 - - [03/Jul/2019 16:02:13] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47708 - - [03/Jul/2019 16:03:05] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47718 - - [03/Jul/2019 16:03:14] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:47910 - - [03/Jul/2019 16:06:12] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47916 - - [03/Jul/2019 16:06:12] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:47920 - - [03/Jul/2019 16:06:14] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:47926 - - [03/Jul/2019 16:06:16] "HTTP/1.1 GET /api/waringinfo/huaian" - 200 OK
+127.0.0.1:47932 - - [03/Jul/2019 16:06:20] "HTTP/1.1 GET /api/waringinfo/nantong" - 200 OK
+127.0.0.1:47940 - - [03/Jul/2019 16:06:21] "HTTP/1.1 GET /api/waringinfo/xuzhou" - 200 OK
+127.0.0.1:47944 - - [03/Jul/2019 16:06:23] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47950 - - [03/Jul/2019 16:06:24] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:47954 - - [03/Jul/2019 16:06:26] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:47966 - - [03/Jul/2019 16:06:34] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:47980 - - [03/Jul/2019 16:06:36] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47988 - - [03/Jul/2019 16:06:41] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:47994 - - [03/Jul/2019 16:06:43] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:48010 - - [03/Jul/2019 16:06:58] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:48034 - - [03/Jul/2019 16:07:10] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:48042 - - [03/Jul/2019 16:07:14] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:48050 - - [03/Jul/2019 16:07:18] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:48456 - - [03/Jul/2019 16:13:22] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:48462 - - [03/Jul/2019 16:13:28] "HTTP/1.1 GET /api/insertexcludelog/info=Error:ER_PARSE_ERROR:YouhaveanerrorinyourSQLsyntax;checkthemanualthatcorrespondstoyourMySQLserverversionfortherightsyntaxtousenear'tb_user_game.leagueId=0'atline1&env=js3mj" - 200 OK
+127.0.0.1:48508 - - [03/Jul/2019 16:14:03] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:48780 - - [03/Jul/2019 16:17:49] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:48812 - - [03/Jul/2019 16:18:09] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:48824 - - [03/Jul/2019 16:18:23] "HTTP/1.1 GET /api/waringinfo/huaian" - 200 OK
+127.0.0.1:48830 - - [03/Jul/2019 16:18:28] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:48854 - - [03/Jul/2019 16:18:43] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:48890 - - [03/Jul/2019 16:19:06] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:49886 - - [03/Jul/2019 16:33:39] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:49890 - - [03/Jul/2019 16:33:41] "HTTP/1.1 GET /api/waringinfo/haian" - 200 OK
+127.0.0.1:49896 - - [03/Jul/2019 16:33:42] "HTTP/1.1 GET /api/waringinfo/huaian" - 200 OK
+127.0.0.1:49912 - - [03/Jul/2019 16:33:56] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:49930 - - [03/Jul/2019 16:34:05] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:49940 - - [03/Jul/2019 16:34:07] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:49946 - - [03/Jul/2019 16:34:10] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:50568 - - [03/Jul/2019 16:41:31] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:50586 - - [03/Jul/2019 16:41:37] "HTTP/1.1 GET /api/count/env=js3mj&time=week" - 200 OK
+127.0.0.1:50592 - - [03/Jul/2019 16:41:38] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:50596 - - [03/Jul/2019 16:41:40] "HTTP/1.1 GET /api/count/env=haian&time=day" - 200 OK
+127.0.0.1:50604 - - [03/Jul/2019 16:41:47] "HTTP/1.1 GET /api/count/env=haian&time=week" - 200 OK
+127.0.0.1:50614 - - [03/Jul/2019 16:41:57] "HTTP/1.1 GET /api/count/env=haian&time=month" - 200 OK
+127.0.0.1:50618 - - [03/Jul/2019 16:41:58] "HTTP/1.1 GET /api/count/env=haian&time=week" - 200 OK
+127.0.0.1:50624 - - [03/Jul/2019 16:41:59] "HTTP/1.1 GET /api/count/env=haian&time=day" - 200 OK
+127.0.0.1:50630 - - [03/Jul/2019 16:41:59] "HTTP/1.1 GET /api/count/env=haian&time=week" - 200 OK
+127.0.0.1:50634 - - [03/Jul/2019 16:42:01] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:50646 - - [03/Jul/2019 16:42:03] "HTTP/1.1 GET /api/waringinfo/haian" - 200 OK
+127.0.0.1:50662 - - [03/Jul/2019 16:42:07] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:50668 - - [03/Jul/2019 16:42:11] "HTTP/1.1 GET /api/waringinfo/huaian" - 200 OK
+127.0.0.1:50672 - - [03/Jul/2019 16:42:13] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:50678 - - [03/Jul/2019 16:42:16] "HTTP/1.1 GET /api/count/env=huaian&time=day" - 200 OK
+127.0.0.1:50850 - - [03/Jul/2019 16:44:57] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:50856 - - [03/Jul/2019 16:44:59] "HTTP/1.1 GET /api/waringinfo/huaian" - 200 OK
+127.0.0.1:50942 - - [03/Jul/2019 16:46:06] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:50952 - - [03/Jul/2019 16:46:16] "HTTP/1.1 GET /api/count/env=huaian&time=day" - 200 OK
+127.0.0.1:38496 - - [03/Jul/2019 20:29:17] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:38530 - - [03/Jul/2019 20:29:44] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:38584 - - [03/Jul/2019 20:30:32] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:38616 - - [03/Jul/2019 20:30:55] "HTTP/1.1 GET /api/insertexcludelog/info=Error: read ECONNRESET&env=js3mj" - 200 OK
+127.0.0.1:38630 - - [03/Jul/2019 20:31:04] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:38798 - - [03/Jul/2019 20:33:33] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:43896 - - [03/Jul/2019 21:41:56] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:36034 - - [04/Jul/2019 09:34:29] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:42304 - - [04/Jul/2019 17:20:52] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:42310 - - [04/Jul/2019 17:20:58] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:42988 - - [04/Jul/2019 17:30:22] "HTTP/1.1 GET /api/showlog/huaian" - 200 OK
+127.0.0.1:43024 - - [04/Jul/2019 17:30:55] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:46118 - - [04/Jul/2019 18:14:08] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:46126 - - [04/Jul/2019 18:14:11] "HTTP/1.1 GET /api/showlog/haian" - 200 OK
+127.0.0.1:46132 - - [04/Jul/2019 18:14:16] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:46138 - - [04/Jul/2019 18:14:18] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:60922 - - [04/Jul/2019 21:35:16] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:44044 - - [05/Jul/2019 07:19:24] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:55324 - - [05/Jul/2019 10:07:08] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:45514 - - [05/Jul/2019 14:23:34] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:45530 - - [05/Jul/2019 14:23:39] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47644 - - [05/Jul/2019 14:53:57] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47672 - - [05/Jul/2019 14:54:12] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:47678 - - [05/Jul/2019 14:54:14] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:47684 - - [05/Jul/2019 14:54:17] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:43762 - - [05/Jul/2019 20:34:16] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:43772 - - [05/Jul/2019 20:34:23] "HTTP/1.1 GET /api/showlog/nantong" - 200 OK
+127.0.0.1:43652 - - [06/Jul/2019 10:23:46] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:43662 - - [06/Jul/2019 10:23:53] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:43672 - - [06/Jul/2019 10:24:03] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:43740 - - [06/Jul/2019 10:24:59] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:43754 - - [06/Jul/2019 10:25:09] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+http://0.0.0.0:8388/
+127.0.0.1:53258 - - [08/Jul/2019 18:17:08] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53284 - - [08/Jul/2019 18:17:23] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53336 - - [08/Jul/2019 18:18:01] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53350 - - [08/Jul/2019 18:18:03] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53356 - - [08/Jul/2019 18:18:04] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53366 - - [08/Jul/2019 18:18:13] "HTTP/1.1 GET /api/insertexcludelog/info=uncaughtException { Error: read ECONNRESET&env=js3mj" - 200 OK
+127.0.0.1:53384 - - [08/Jul/2019 18:18:23] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53392 - - [08/Jul/2019 18:18:27] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:53432 - - [08/Jul/2019 18:18:50] "HTTP/1.1 GET /api/insertexcludelog/info=r: "TypeError: Cannot read property 'tableid' of undefined&env=xuzhou" - 200 OK
+127.0.0.1:53488 - - [08/Jul/2019 18:19:42] "HTTP/1.1 GET /api/insertexcludelog/info=r: "TypeError: Cannot read property 'tableid' of undefined&env=xuzhou" - 200 OK
+127.0.0.1:53506 - - [08/Jul/2019 18:19:48] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56516 - - [09/Jul/2019 15:09:50] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56568 - - [09/Jul/2019 15:10:31] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56572 - - [09/Jul/2019 15:10:33] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:56620 - - [09/Jul/2019 15:10:51] "HTTP/1.1 GET /api/insertexcludelog/info=r: "TypeError: Cannot read property 'tableid' of undefined&env=js3mj" - 200 OK
+127.0.0.1:56718 - - [09/Jul/2019 15:11:09] "HTTP/1.1 GET /api/insertexcludelog/info=r: "TypeError: Cannot read property 'tableid' of undefined&env=js3mj" - 200 OK
+127.0.0.1:56752 - - [09/Jul/2019 15:11:45] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56758 - - [09/Jul/2019 15:11:45] "HTTP/1.1 GET /api/count/env=js3mj&time=day" - 200 OK
+127.0.0.1:56772 - - [09/Jul/2019 15:11:48] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56792 - - [09/Jul/2019 15:12:06] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56820 - - [09/Jul/2019 15:12:24] "HTTP/1.1 GET /api/insertexcludelog/info=Error: read ECONNRESET&env=js3mj" - 200 OK
+127.0.0.1:56830 - - [09/Jul/2019 15:12:30] "HTTP/1.1 GET /api/waringinfo/js3mj" - 200 OK
+127.0.0.1:56838 - - [09/Jul/2019 15:12:34] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56874 - - [09/Jul/2019 15:13:00] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:56892 - - [09/Jul/2019 15:13:06] "HTTP/1.1 GET /api/showlog/xuzhou" - 200 OK
+127.0.0.1:51980 - - [10/Jul/2019 10:15:08] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:52002 - - [10/Jul/2019 10:15:20] "HTTP/1.1 GET /api/insertexcludelog/info=Error: not opened&env=js3mj" - 200 OK
+127.0.0.1:52082 - - [10/Jul/2019 10:16:31] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:52126 - - [10/Jul/2019 10:17:08] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:52164 - - [10/Jul/2019 10:17:39] "HTTP/1.1 GET /api/insertexcludelog/info=SyntaxError: Unexpected token <&env=js3mj" - 200 OK
+127.0.0.1:52194 - - [10/Jul/2019 10:18:02] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:52338 - - [10/Jul/2019 10:20:18] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:52456 - - [10/Jul/2019 10:21:52] "HTTP/1.1 GET /api/insertexcludelog/info=TypeError: Cannot set property 'playNum' of undefined&env=js3mj" - 200 OK
+127.0.0.1:52466 - - [10/Jul/2019 10:21:58] "HTTP/1.1 GET /api/insertexcludelog/info=TypeError: Cannot set property 'playNum' of undefined&env=haian" - 200 OK
+127.0.0.1:52494 - - [10/Jul/2019 10:22:20] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:52508 - - [10/Jul/2019 10:22:30] "HTTP/1.1 GET /api/insertexcludelog/info=TypeError: Cannot set property 'playNum' of undefined&env=js3mj" - 200 OK
+127.0.0.1:52636 - - [10/Jul/2019 10:24:16] "HTTP/1.1 GET /api/insertexcludelog/info=SyntaxError: Unexpected number&env=haian" - 200 OK
+127.0.0.1:52786 - - [10/Jul/2019 10:26:21] "HTTP/1.1 GET /api/insertexcludelog/info=Error: ETIMEDOUT&env=haian" - 200 OK
+127.0.0.1:52814 - - [10/Jul/2019 10:26:47] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:52918 - - [10/Jul/2019 10:28:16] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53096 - - [10/Jul/2019 10:28:55] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53392 - - [10/Jul/2019 10:33:29] "HTTP/1.1 GET /api/insertexcludelog/info=TypeError:Cannotsetproperty'playNum'ofundefined&env=haian" - 200 OK
+127.0.0.1:53616 - - [10/Jul/2019 10:36:19] "HTTP/1.1 GET /api/insertexcludelog/info=SyntaxError:Unexpectednumber&env=haian" - 200 OK
+127.0.0.1:53756 - - [10/Jul/2019 10:37:57] "HTTP/1.1 GET /api/insertexcludelog/info=Error:ETIMEDOUT&env=haian" - 200 OK
+127.0.0.1:53822 - - [10/Jul/2019 10:38:41] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53930 - - [10/Jul/2019 10:40:16] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:53986 - - [10/Jul/2019 10:41:01] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:54404 - - [10/Jul/2019 10:46:25] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:54442 - - [10/Jul/2019 10:46:55] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:54734 - - [10/Jul/2019 10:51:18] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:54750 - - [10/Jul/2019 10:51:20] "HTTP/1.1 GET /api/excludelog/js3mj" - 200 OK
+127.0.0.1:55184 - - [10/Jul/2019 10:57:47] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:55224 - - [10/Jul/2019 10:58:12] "HTTP/1.1 GET /api/showlog/js3mj" - 200 OK
+127.0.0.1:55238 - - [10/Jul/2019 10:58:19] "HTTP/1.1 GET /api/excludelog/js3mj" - 200 OK

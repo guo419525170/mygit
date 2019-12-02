@@ -7,7 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>告警日志</title>
+    <title>发出的告警信息</title>
     <link rel="stylesheet" href="../css/common.css" />
     <link
       rel="stylesheet"
@@ -28,40 +28,32 @@
       [v-cloak] {
         display: none;
       }
-      .chose {
-        margin: 0 0 10px 0;
+      .chose{
+        margin: 0 0 10px 0
       }
+    
     </style>
   </head>
   <body>
     <div id="app">
-      <div class="title flex-box flex-v-c" v-cloak>日志统计-[ {{ env }} ]</div>
-      <div class="flex-box flex-v-c chose">
-            <div>
-                    <el-select
-                v-model="env"
-                style="margin-right:20px"
-                placeholder="岳阳"
-                size="medium"
-                @change="selectAction"
-              >
-                <el-option
-                  v-for="item in selectOptions"
-                  :key="item.value"
-                  :label="item.label"
-                  :value="item.value"
-                />
-              </el-select>
-              </div>
-              <div class="time">
-                <el-radio-group v-model="time" @change="choseTime">
-                  <el-radio-button label="day">日</el-radio-button>
-                  <el-radio-button label="week">周</el-radio-button>
-                  <el-radio-button label="month">月</el-radio-button>
-                </el-radio-group>
-              </div>
+        <div class="title flex-box flex-v-c" v-cloak>发出的告警信息-[ {{ env }} ]</div>
+        <div class="chose">
+            <el-select
+        v-model="env"
+        style="margin-right:20px"
+        placeholder="晋中"
+        size="medium"
+        @change="selectAction"
+      >
+        <el-option
+          v-for="item in selectOptions"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value"
+        />
+      </el-select>
       </div>
-     
+      <template> </template>
       <template>
         <el-table
           :data="currentPage"
@@ -73,17 +65,29 @@
         >
           <el-table-column
             align="center"
-            prop="hostname"
-            label="告警主机"
+            prop="datetime"
+            label="告警时间"
             width="180"
           >
           </el-table-column>
           <el-table-column
-            prop="num"
-            label="告警次数"
-            width="120"
             align="center"
+            prop="hostname"
+            label="告警主机"
+            width="180"
           >
+	  </el-table-column>
+
+	  <el-table-column
+            align="center"
+            prop="mode"
+            label="应用模块"
+            width="80"
+          >
+          </el-table-column>
+
+
+          <el-table-column prop="status" label="推送端" width="80"> </el-table-column>
           </el-table-column>
           <el-table-column prop="error_log" label="告警日志"> </el-table-column>
         </el-table>
@@ -108,23 +112,15 @@
       el: '#app',
       data: function() {
         return {
-          env: 'yueyang',
-          time: 'day',
-          selectOptions: [
-            {value: 'yueyang',label: '岳阳'},
-            {value: 'shaoyang',label: '邵阳'},
-            {value: 'jinzhong',label: '晋中'},
-            {value: 'js3mj',label: '江苏'},
-            {value: 'haian',label: '海安'},
-            {value: 'huaian',label: '淮安'},
-            {value: 'nantong',label: '南通'},
-            {value: 'xuzhou',label: '徐州'},
-            {value: 'yongzhou',label: '永州'},
-            {value: 'xiangxiang',label: '湘乡'},
-            {value: 'hengyang',label: '衡阳'},
-            {value: 'leiyang',label: '耒阳'},
-          ],
+          env: 'js3mj',
           total: '',
+          selectOptions: [
+            {value: 'haian',label: '海安'},
+            {value: 'js3mj',label: '江苏'},
+            {value: 'xuzhou',label: '徐州'},
+            {value: 'nantong',label: '南通'},
+            {value: 'huaian',label: '淮安'},
+          ],
           listLoading: true,
           currentPage: [],
           tableData: []
@@ -147,11 +143,12 @@
             console.log('没有参数')
           }
         },
-        choseTime() {
-          this.getRecordData()
-        },
         selectAction () {
           this.getRecordData()
+        },
+        closeWin: function() {
+          var iframe = window.parent.document.getElementById('iframe')
+          iframe.parentNode.removeChild(iframe)
         },
         currentChange: function(page) {
           this.currentPage = this.tableData[page - 1]
@@ -175,20 +172,11 @@
         /**列表数据**/
         getRecordData: function(param) {
           var that = this
-          if (location.href.indexOf('?') > 0) {
-            that.allParams().env
-          }
           that.listLoading = true
           axios
-            .get(
-              'https://errorlog.5292game.com/api/count/env=' +
-                that.env +
-                '&time=' +
-                that.time,
-              {
-                params: {}
-              }
-            )
+            .get('http://hdlog.tocooltech.com/api/waringinfo/' + that.env, {
+              params: {}
+            })
             .then(function(res) {
               that.listLoading = false
               that.tableData = res
